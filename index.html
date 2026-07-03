@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'arbre des devoirs — Anglais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/json" id="tree-data">
+{
+  "lines": [
+    {
+      "id": "co",
+      "code": "CO",
+      "name": "Comprendre un audio ou une vidéo",
+      "icon": "🎧",
+      "color": "#2C6E8E",
+      "stations": [
+        {
+          "q": "Tu écoutes le document pour la première fois",
+          "strategie": "Compréhension globale avant compréhension détaillée",
+          "tips": [
+            "Avant d'écouter, regarde s'il y a un titre, une image ou une consigne : ils annoncent le thème",
+            "Lors de la première écoute, ne cherche pas à tout comprendre : repère juste le thème général et le type de document (dialogue, publicité, information...)",
+            "Compte le nombre de personnes qui parlent et essaie de repérer leur ton (content, énervé, surpris...)",
+            "Ne mets pas l'audio en pause dès la première écoute : laisse-toi porter par le sens global",
+            "Note en français, en quelques mots, ce que tu as compris globalement avant de recommencer"
+          ],
+          "astuce": "Comprendre l'ambiance générale d'abord permet de mieux comprendre les détails ensuite."
+        },
+        {
+          "q": "Tu dois répondre à des questions précises sur l'audio",
+          "strategie": "Écoute sélective (repérage ciblé)",
+          "tips": [
+            "Lis toutes les questions avant de réécouter : elles indiquent ce qu'il faut repérer",
+            "Pour chaque question, identifie le type d'information à chercher (un chiffre, un lieu, un nom, une date...)",
+            "Réécoute en te concentrant uniquement sur les informations demandées, une question à la fois si besoin",
+            "Si tu rates une information, continue d'écouter : tu pourras y revenir à la prochaine écoute",
+            "Réponds avec les mots que tu as entendus quand c'est possible, plutôt que d'inventer"
+          ],
+          "astuce": "Une question = un objectif d'écoute. Ne cherche pas tout en même temps."
+        },
+        {
+          "q": "Tu ne reconnais pas certains mots que tu entends",
+          "strategie": "Tolérance à l'incompréhension partielle",
+          "tips": [
+            "C'est normal de ne pas comprendre 100 % d'un document audio, même pour les meilleurs élèves",
+            "Concentre-toi sur les mots que tu reconnais autour du mot inconnu : ils donnent le contexte",
+            "Repère les mots qui ressemblent au français (mots transparents)",
+            "Fie-toi à l'intonation et au ton de la voix pour deviner si c'est positif, négatif, une question...",
+            "N'arrête pas d'écouter pour chercher un mot dans le dictionnaire pendant l'audio : note-le et cherche après"
+          ],
+          "astuce": "Un mot inconnu ne bloque pas la compréhension globale : le contexte suffit souvent."
+        },
+        {
+          "q": "Tu dois prendre des notes en écoutant",
+          "strategie": "Prise de notes sélective",
+          "tips": [
+            "N'essaie pas d'écrire des phrases complètes : note des mots-clés et des chiffres",
+            "Utilise des abréviations ou des symboles que tu comprends (+, ≠, →...)",
+            "Laisse de l'espace entre tes notes pour compléter à la deuxième écoute",
+            "Concentre-toi sur les informations utiles à la tâche demandée, pas sur tout ce que tu entends"
+          ],
+          "astuce": "Prendre des notes efficaces, c'est trier l'information, pas tout transcrire."
+        }
+      ]
+    },
+    {
+      "id": "ce",
+      "code": "CE",
+      "name": "Lire et comprendre un texte",
+      "icon": "📖",
+      "color": "#1E6E71",
+      "stations": [
+        {
+          "q": "Tu découvres le texte pour la première fois",
+          "strategie": "Anticipation par les indices paratextuels",
+          "tips": [
+            "Observe le texte avant de le lire : titre, images, mise en page, source, auteur",
+            "Ces éléments donnent déjà des indices sur le thème et le type de texte",
+            "Fais une première lecture rapide (survol) sans t'arrêter sur les mots inconnus",
+            "Identifie le type de texte (article, lettre, extrait de roman, publicité...) : cela influence ce que tu dois y chercher",
+            "Formule en une phrase, en français, de quoi parle le texte selon toi"
+          ],
+          "astuce": "Un texte se comprend souvent avant même d'être lu, grâce à ce qui l'entoure."
+        },
+        {
+          "q": "Tu dois répondre à des questions de compréhension",
+          "strategie": "Lecture de repérage (balayage ciblé)",
+          "tips": [
+            "Lis toutes les questions avant de relire le texte : elles guident ta lecture",
+            "Repère dans le texte les mots de la question ou leurs synonymes",
+            "La réponse se trouve souvent dans la même phrase ou le même paragraphe que ces mots",
+            "Réponds par une phrase complète en réutilisant le vocabulaire du texte",
+            "Si la question porte sur une opinion ou un sentiment, cherche les mots qui expriment une émotion"
+          ],
+          "astuce": "La bonne réponse est presque toujours écrite dans le texte : il faut la retrouver, pas l'inventer."
+        },
+        {
+          "q": "Le texte contient beaucoup de mots inconnus",
+          "strategie": "Inférence lexicale par le contexte",
+          "tips": [
+            "Ne cherche pas chaque mot inconnu dans le dictionnaire, ça fait perdre le fil du texte",
+            "Essaie de deviner le sens d'un mot grâce aux mots qui l'entourent",
+            "Repère les mots transparents, proches du français",
+            "Regarde si le mot ressemble à un mot que tu connais déjà (même famille, préfixe, suffixe)",
+            "Ne cherche dans le dictionnaire que les mots vraiment indispensables pour répondre à une question"
+          ],
+          "astuce": "Un bon lecteur devine plus qu'il ne cherche dans le dictionnaire."
+        },
+        {
+          "q": "Tu dois donner ton avis ou interpréter le texte",
+          "strategie": "Lecture inférentielle",
+          "tips": [
+            "Distingue ce que le texte dit clairement de ce qu'il laisse comprendre sans le dire",
+            "Appuie ton avis sur un élément précis du texte (une phrase, un mot)",
+            "Utilise des expressions pour introduire ton opinion (I think that / In my opinion / It seems that)",
+            "N'hésite pas à nuancer ta réponse si le texte est ambigu"
+          ],
+          "astuce": "Une bonne interprétation s'appuie toujours sur une preuve trouvée dans le texte."
+        }
+      ]
+    },
+    {
+      "id": "ee",
+      "code": "EE",
+      "name": "Rédiger un texte",
+      "icon": "✍️",
+      "color": "#C1502E",
+      "stations": [
+        {
+          "q": "Tu n'as pas encore commencé",
+          "strategie": "Analyse de la consigne et planification",
+          "tips": [
+            "Relis la consigne deux fois et surligne : qui écrit ? à qui (destinataire) ? pourquoi (but) ? avec quel temps ?",
+            "Identifie le type de texte demandé (email, dialogue, récit, description...) : chaque type a ses codes",
+            "Note en français, en 3-4 mots par idée, ce que tu veux dire : c'est un brouillon d'idées, pas de phrases",
+            "Classe tes idées dans un ordre logique (introduction, développement, conclusion, ou ordre chronologique)",
+            "Cherche 6 à 8 mots ou expressions utiles avant de commencer à rédiger",
+            "Commence par la phrase la plus simple à écrire, tu enchaîneras plus facilement ensuite"
+          ],
+          "astuce": "Un texte simple et juste vaut toujours mieux qu'un texte compliqué et faux."
+        },
+        {
+          "q": "Tu es bloqué(e) au milieu d'une phrase",
+          "strategie": "Simplification et reformulation",
+          "tips": [
+            "Dis ta phrase en français à voix haute, puis traduis-la mot par mot",
+            "Vérifie le temps : l'action se passe maintenant, avant, ou après ?",
+            "Remplace le mot ou la structure que tu ne connais pas par quelque chose de plus simple que tu maîtrises",
+            "Cherche le mot isolé dans un dictionnaire, jamais la phrase entière dans un traducteur automatique",
+            "Si la phrase reste trop compliquée, coupe-la en deux phrases plus courtes",
+            "Continue à écrire la suite du texte : tu reviendras sur cette phrase à la relecture"
+          ],
+          "astuce": "Une phrase courte et correcte vaut mieux qu'une phrase longue et fausse."
+        },
+        {
+          "q": "Tu as fini, il faut te relire",
+          "strategie": "Révision ciblée (un point à la fois)",
+          "tips": [
+            "Vérifie que chaque phrase a bien un sujet et un verbe conjugué",
+            "Au présent : as-tu pensé au « -s » à la 3e personne (he / she / it) ?",
+            "Le pronom I (je) prend toujours une majuscule",
+            "Vérifie les accords, la ponctuation et les majuscules en début de phrase",
+            "Relis à voix basse : est-ce que ça « sonne » anglais ?",
+            "Vérifie que tu as bien respecté la consigne (longueur, temps demandé, destinataire)"
+          ],
+          "astuce": "Relire à voix basse permet souvent d'entendre une erreur qu'on ne voit pas."
+        },
+        {
+          "q": "Ton texte est correct, tu veux l'améliorer",
+          "strategie": "Enrichissement lexical et syntaxique",
+          "tips": [
+            "Remplace un mot simple répété par un synonyme (nice → great, lovely, amazing selon le contexte)",
+            "Ajoute des connecteurs logiques (first, then, however, because, so...)",
+            "Varie la longueur des phrases : alterne phrases courtes et phrases plus construites",
+            "Ajoute un détail, une émotion ou une opinion pour rendre le texte plus vivant"
+          ],
+          "astuce": "On enrichit un texte seulement quand il est déjà juste, jamais avant."
+        }
+      ]
+    },
+    {
+      "id": "eoc",
+      "code": "EOC",
+      "name": "Parler seul(e) (exposé, présentation)",
+      "icon": "🎤",
+      "color": "#C98A1F",
+      "stations": [
+        {
+          "q": "Tu dois préparer un exposé ou une présentation",
+          "strategie": "Planification par mots-clés",
+          "tips": [
+            "Prépare un plan avec des mots-clés, pas un texte entier à apprendre par cœur",
+            "Utilise des connecteurs pour structurer (first, then, next, finally)",
+            "Prévois une phrase d'accroche et une phrase de conclusion",
+            "Prépare des fiches ou des images comme supports visuels, pas un texte à lire",
+            "Chronomètre-toi pour vérifier que tu respectes le temps demandé"
+          ],
+          "astuce": "Apprendre des mots-clés plutôt qu'un texte entier rend ton oral plus naturel et évite le blanc de mémoire."
+        },
+        {
+          "q": "Tu dois t'enregistrer (audio ou vidéo)",
+          "strategie": "Entraînement par répétitions successives",
+          "tips": [
+            "Entraîne-toi à voix haute plusieurs fois avant d'enregistrer, seul(e) puis devant un miroir",
+            "Fais un premier enregistrement test pour repérer ce qui ne va pas (trop rapide, hésitations...)",
+            "Articule et ralentis un peu ton débit par rapport au français",
+            "Travaille l'intonation : une question monte en fin de phrase, une affirmation descend",
+            "Recommence seulement les passages qui posent problème, pas tout l'enregistrement à chaque fois"
+          ],
+          "astuce": "Un oral clair et un peu lent est toujours mieux compris qu'un oral rapide et confus."
+        },
+        {
+          "q": "Tu as le trac, peur de parler",
+          "strategie": "Gestion de l'anxiété langagière",
+          "tips": [
+            "Rappelle-toi qu'une erreur de prononciation ou de grammaire n'empêche pas de communiquer",
+            "Respire calmement avant de commencer, ne te lance pas en apnée",
+            "Commence par ce que tu maîtrises le mieux dans ton plan",
+            "Accepte les hésitations : dire « euh... » ou marquer une pause est normal, même en français",
+            "Concentre-toi sur le message que tu veux faire passer, pas sur la perfection de chaque mot"
+          ],
+          "astuce": "Le but de l'oral, c'est d'être compris, pas d'être parfait."
+        },
+        {
+          "q": "Tu dois décrire une image ou une peinture",
+          "strategie": "Description structurée (plans et vocabulaire prêt à l'emploi)",
+          "tips": [
+            "Commence toujours par une phrase d'introduction : This picture shows... / In this picture, we can see...",
+            "Décris par plans : d'abord le premier plan (foreground), puis l'arrière-plan (background)",
+            "Suis un ordre fixe : les personnages, le lieu, les couleurs, l'action",
+            "Utilise le présent simple ou le présent progressif (there is/are..., he is wearing...)",
+            "Vocabulaire spatial prêt à l'emploi : on the left/right, in the middle, in the background",
+            "Vocabulaire descriptif prêt à l'emploi : he/she looks + adjectif (happy, worried, surprised...), the colours are bright/dark...",
+            "Reste factuel : décris ce que tu vois avant d'interpréter ce que ça signifie"
+          ],
+          "astuce": "Une description réussie suit toujours le même ordre : ça structure autant ta pensée que ton discours."
+        },
+        {
+          "q": "Tu dois analyser une peinture ou une œuvre d'art",
+          "strategie": "Analyse en trois temps : décrire, interpréter, contextualiser",
+          "tips": [
+            "Étape 1 : décris ce que tu vois objectivement (composition, couleurs, personnages, lumière)",
+            "Étape 2 : interprète — quel effet l'œuvre produit-elle selon toi, et pourquoi ?",
+            "Étape 3 : relie l'œuvre à son contexte si tu le connais (époque, artiste, mouvement, sujet traité)",
+            "Utilise du vocabulaire d'analyse (this painting represents... / it seems to suggest... / the artist chose to...)",
+            "Appuie chaque interprétation sur un élément visible dans l'image (une couleur, un regard, une position...)",
+            "Si la consigne le permet, compare avec une autre image déjà étudiée en classe"
+          ],
+          "astuce": "On ne dit jamais ce qu'on ressent sans dire pourquoi : chaque interprétation doit s'appuyer sur un détail visible."
+        },
+        {
+          "q": "Tu dois présenter une image à l'oral (exposé, épreuve)",
+          "strategie": "Structuration de la présentation orale",
+          "tips": [
+            "Prépare un plan en 3 parties : description générale, description détaillée, interprétation ou avis personnel",
+            "Prépare des mots-clés, pas un texte entier appris par cœur",
+            "Entraîne-toi en regardant l'image pendant que tu parles, pas tes notes",
+            "Prévois des phrases de transition entre chaque partie (Now, let's look at... / This leads me to think that...)",
+            "Termine par une conclusion qui donne ton avis ou fait le lien avec le thème étudié en classe"
+          ],
+          "astuce": "Une bonne présentation d'image suit un mouvement clair : du général vers le particulier, puis vers ton interprétation."
+        }
+      ]
+    },
+    {
+      "id": "eoi",
+      "code": "EOI",
+      "name": "Parler à quelqu'un (dialogue, échange)",
+      "icon": "💬",
+      "color": "#6B4C9A",
+      "stations": [
+        {
+          "q": "Tu dois préparer un dialogue ou un jeu de rôle",
+          "strategie": "Anticipation des échanges",
+          "tips": [
+            "Identifie qui sont les deux personnages et ce qu'ils veulent obtenir dans l'échange",
+            "Prépare des amorces pour commencer, réagir et conclure la conversation",
+            "Prévois des questions ET des réponses : une interaction n'est jamais à sens unique",
+            "Prépare quelques expressions de secours en cas d'incompréhension (voir la situation suivante)",
+            "Entraîne-toi à deux avant de jouer la scène, pas seulement chacun de son côté"
+          ],
+          "astuce": "Un bon dialogue rebondit sur ce que dit l'autre, il ne récite pas juste son texte préparé."
+        },
+        {
+          "q": "Tu dois réagir à l'oral en classe (interaction spontanée)",
+          "strategie": "Réaction immédiate et prise de risque",
+          "tips": [
+            "Ne cherche pas la phrase parfaite : dis une réponse simple plutôt que de te taire",
+            "Réutilise les mots de la question posée pour construire ta réponse",
+            "Si tu ne sais pas comment dire quelque chose, utilise un mot plus simple ou décris l'idée autrement",
+            "Une réponse courte et juste vaut mieux qu'un silence ou une réponse trop longue et fausse",
+            "Écoute la question jusqu'au bout avant de préparer ta réponse"
+          ],
+          "astuce": "En interaction, parler avec des imperfections vaut toujours mieux que ne pas parler du tout."
+        },
+        {
+          "q": "Tu ne comprends pas ce qu'on te dit ou te demande",
+          "strategie": "Stratégies de négociation du sens",
+          "tips": [
+            "Demande de répéter : Can you repeat, please?",
+            "Demande de reformuler plus simplement : Can you say that in another way?",
+            "Demande de ralentir : Can you speak more slowly, please?",
+            "Dis que tu ne comprends pas plutôt que de répondre au hasard : Sorry, I don't understand.",
+            "Propose ta compréhension pour vérifier : Do you mean...?"
+          ],
+          "astuce": "Savoir demander de l'aide à l'oral est une compétence en soi, pas un aveu d'échec."
+        }
+      ]
+    },
+    {
+      "id": "mediation",
+      "code": "Médiation",
+      "name": "Expliquer, résumer ou transmettre",
+      "icon": "🔄",
+      "color": "#4F7358",
+      "stations": [
+        {
+          "q": "Tu dois résumer ou expliquer un document à quelqu'un",
+          "strategie": "Reformulation de l'essentiel",
+          "tips": [
+            "Repère seulement les informations essentielles : qui, quoi, où, quand, pourquoi",
+            "Laisse de côté les détails secondaires pour ta reformulation",
+            "Reformule avec tes propres mots, plus simples que ceux du document d'origine",
+            "Adapte ton niveau de langue à la personne à qui tu t'adresses",
+            "Vérifie que la personne a bien compris en lui demandant si elle a des questions"
+          ],
+          "astuce": "Médier, ce n'est pas tout redire, c'est transmettre l'essentiel pour que l'autre comprenne."
+        },
+        {
+          "q": "Tu dois transmettre un message d'une langue à l'autre",
+          "strategie": "Traduction fonctionnelle (le sens, pas mot à mot)",
+          "tips": [
+            "Comprends d'abord le sens global du message avant de le transmettre",
+            "Transmets le sens et l'intention du message, pas chaque mot traduit littéralement",
+            "Adapte les expressions qui n'existent pas telles quelles dans l'autre langue",
+            "Garde les informations importantes (chiffres, noms, lieux, dates) parfaitement exactes",
+            "Vérifie que ton message permet à la personne d'agir ou de répondre correctement"
+          ],
+          "astuce": "Une bonne médiation privilégie toujours le sens sur la traduction mot à mot."
+        }
+      ]
+    },
+    {
+      "id": "stuck",
+      "code": "SOS",
+      "name": "Je suis complètement bloqué(e)",
+      "icon": "🆘",
+      "color": "#B5535D",
+      "stations": [
+        {
+          "q": "Quelle que soit l'activité, avant d'abandonner",
+          "tips": [
+            "Relis calmement la consigne, phrase par phrase",
+            "Cherche un exemple semblable dans ton cahier ou ton manuel",
+            "Fais ce que tu peux, même incomplet : un devoir commencé vaut mieux qu'une page blanche",
+            "Note ta question précise (pas juste « je comprends pas ») pour la poser en cours",
+            "Préviens un adulte si le blocage vient d'un souci technique"
+          ],
+          "astuce": "Un devoir incomplet avec une vraie tentative rapporte toujours plus qu'une page blanche."
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --cream: #F6F1E7;
+    --card: #FFFFFF;
+    --ink: #2B2620;
+    --ink-soft: #6B6459;
+    --line-color: #C1502E;
+    --radius: 16px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 40px;
+  }
+
+  h1, h2, .display {
+    font-family: 'Archivo', -apple-system, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  header {
+    padding: 28px 20px 18px;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .brand-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .roundel {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid var(--ink);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+  }
+  .roundel svg { width: 22px; height: 22px; }
+
+  .brand-text { line-height: 1.1; }
+  .brand-text .eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  h1 { font-size: 25px; margin: 2px 0 0; }
+
+  header p.sub {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 4px 0 0;
+    max-width: 48ch;
+  }
+  header p.legend {
+    color: var(--ink-soft);
+    font-size: 12.5px;
+    margin: 8px 0 0;
+    max-width: 48ch;
+    font-style: italic;
+  }
+
+  main { max-width: 620px; margin: 0 auto; padding: 4px 20px 20px; }
+
+  /* ---- Trail (path already chosen) ---- */
+  #trail { margin-bottom: 4px; }
+
+  .trail-item { position: relative; padding-left: 30px; padding-bottom: 22px; }
+  .trail-item::before {
+    content: '';
+    position: absolute;
+    left: 9px; top: 22px; bottom: 0;
+    width: 3px;
+    background: repeating-linear-gradient(
+      to bottom,
+      var(--line-color) 0, var(--line-color) 6px,
+      transparent 6px, transparent 11px
+    );
+  }
+  .trail-item .node-dot {
+    position: absolute;
+    left: 0; top: 2px;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--line-color);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px;
+    color: #fff;
+  }
+  .trail-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--card);
+    border-radius: 10px;
+    padding: 9px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink-soft);
+    box-shadow: 0 1px 2px rgba(43,38,32,0.05);
+  }
+  .trail-chip .chip-icon { font-size: 15px; }
+  .trail-chip b { color: var(--ink); font-weight: 700; }
+
+  /* ---- Active question card ---- */
+  .qnode { position: relative; padding-left: 30px; }
+  .qnode.has-parent::before {
+    content: '';
+    position: absolute;
+    left: 9px; top: -22px; height: 22px;
+    width: 3px;
+    background: repeating-linear-gradient(
+      to bottom,
+      var(--line-color) 0, var(--line-color) 6px,
+      transparent 6px, transparent 11px
+    );
+  }
+  .qnode .node-dot {
+    position: absolute;
+    left: 0; top: 2px;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    border: 3px solid var(--line-color);
+    background: var(--cream);
+  }
+
+  .qcard {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 18px 18px 16px;
+    box-shadow: 0 1px 3px rgba(43,38,32,0.08);
+    animation: cardIn 0.35s ease;
+  }
+  @keyframes cardIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .qcard .qlabel {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: var(--line-color);
+    margin-bottom: 6px;
+  }
+  .qcard .qtext {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 14px;
+    line-height: 1.3;
+  }
+
+  .choice-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    text-align: left;
+    background: var(--cream);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 13px 14px;
+    margin-bottom: 9px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    cursor: pointer;
+    transition: border-color 0.15s ease, transform 0.1s ease;
+  }
+  .choice-btn:last-child { margin-bottom: 0; }
+  .choice-btn:hover { transform: translateX(2px); }
+  .choice-btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+  .choice-btn .choice-icon {
+    font-size: 19px;
+    width: 30px; height: 30px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--card);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .choice-btn .choice-text { flex: 1; }
+  .choice-btn .choice-code {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--ink-soft);
+    background: var(--card);
+    border-radius: 6px;
+    padding: 2px 6px;
+    margin-left: 4px;
+    flex-shrink: 0;
+  }
+  .choice-btn .choice-arrow { margin-left: 4px; color: var(--ink-soft); flex-shrink: 0; }
+
+  /* ---- Leaf / result node ---- */
+  .leaf {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 18px 18px 18px;
+    box-shadow: 0 1px 3px rgba(43,38,32,0.08);
+    border: 2px dashed var(--line-color);
+    animation: cardIn 0.35s ease;
+  }
+  .leaf .leaf-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: var(--line-color);
+    margin-bottom: 4px;
+  }
+  .leaf .strategie-badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--ink);
+    background: var(--cream);
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin-bottom: 12px;
+  }
+  .leaf ul { margin: 0; padding-left: 20px; }
+  .leaf li { margin-bottom: 9px; font-size: 15.5px; line-height: 1.45; }
+  .leaf li::marker { color: var(--line-color); }
+
+  .astuce {
+    margin-top: 14px;
+    padding: 11px 14px;
+    background: var(--cream);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink);
+    border-left: 4px solid var(--line-color);
+  }
+  .astuce b { font-weight: 700; }
+
+  /* ---- Controls ---- */
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    padding-left: 30px;
+  }
+  .ctrl-btn {
+    flex: 1;
+    background: var(--card);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--ink);
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(43,38,32,0.06);
+  }
+  .ctrl-btn:hover { background: #fff; }
+  .ctrl-btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+  .ctrl-btn.primary {
+    background: var(--ink);
+    color: var(--cream);
+  }
+
+  footer {
+    max-width: 620px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: 12px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .qcard, .leaf { animation: none !important; }
+    .choice-btn { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand-row">
+    <div class="roundel" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="6.5" r="4.5" fill="currentColor"/>
+        <circle cx="7.5" cy="11" r="4" fill="currentColor"/>
+        <circle cx="16.5" cy="11" r="4" fill="currentColor"/>
+        <rect x="10.6" y="14" width="2.8" height="7.5" rx="1.2" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="brand-text">
+      <div class="eyebrow">English homework · collège</div>
+      <h1>L'arbre des devoirs</h1>
+    </div>
+  </div>
+  <p class="sub">Réponds aux questions les unes après les autres. Chaque choix te rapproche d'une stratégie et de conseils concrets pour avancer seul(e).</p>
+  <p class="legend">Classé par activité langagière : CO, CE, EE, EOC, EOI, médiation — comme en cours.</p>
+</header>
+
+<main>
+  <div id="trail"></div>
+  <div id="active-node"></div>
+  <div class="controls" id="controls" style="display:none;">
+    <button class="ctrl-btn" id="back-btn" type="button">← Étape précédente</button>
+    <button class="ctrl-btn primary" id="restart-btn" type="button">Recommencer</button>
+  </div>
+</main>
+
+<footer>Un outil BROT2YOU</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var data = JSON.parse(document.getElementById("tree-data").textContent);
+  var trailEl = document.getElementById("trail");
+  var activeEl = document.getElementById("active-node");
+  var controlsEl = document.getElementById("controls");
+  var backBtn = document.getElementById("back-btn");
+  var restartBtn = document.getElementById("restart-btn");
+
+  var state = { lineId: null, stationIndex: null };
+
+  function currentLine() {
+    if (!state.lineId) return null;
+    for (var i = 0; i < data.lines.length; i++) {
+      if (data.lines[i].id === state.lineId) return data.lines[i];
+    }
+    return null;
+  }
+
+  function setRootColor(color) {
+    document.documentElement.style.setProperty("--line-color", color || "#C1502E");
+  }
+
+  function buildTrail() {
+    trailEl.innerHTML = "";
+    var line = currentLine();
+    var steps = [];
+
+    if (line) {
+      steps.push({ icon: line.icon, text: line.code + " · " + line.name, color: line.color });
+    }
+    if (line && state.stationIndex !== null && line.stations.length > 1) {
+      var st = line.stations[state.stationIndex];
+      steps.push({ icon: "→", text: st.q, color: line.color });
+    }
+
+    for (var i = 0; i < steps.length; i++) {
+      var s = steps[i];
+      var item = document.createElement("div");
+      item.className = "trail-item";
+      item.style.setProperty("--line-color", s.color);
+
+      var dot = document.createElement("span");
+      dot.className = "node-dot";
+      dot.style.background = s.color;
+      dot.textContent = "✓";
+
+      var chip = document.createElement("span");
+      chip.className = "trail-chip";
+      var iconSpan = document.createElement("span");
+      iconSpan.className = "chip-icon";
+      iconSpan.textContent = s.icon;
+      var textSpan = document.createElement("b");
+      textSpan.textContent = s.text;
+      chip.appendChild(iconSpan);
+      chip.appendChild(textSpan);
+
+      item.appendChild(dot);
+      item.appendChild(chip);
+      trailEl.appendChild(item);
+    }
+  }
+
+  function render() {
+    activeEl.innerHTML = "";
+    var line = currentLine();
+
+    if (!state.lineId) {
+      setRootColor("#C1502E");
+      buildTrail();
+      renderRootQuestion();
+      controlsEl.style.display = "none";
+      return;
+    }
+
+    setRootColor(line.color);
+
+    if (state.stationIndex === null) {
+      if (line.stations.length === 1) {
+        state.stationIndex = 0;
+        render();
+        return;
+      }
+      buildTrail();
+      renderStationQuestion(line);
+      controlsEl.style.display = "flex";
+      return;
+    }
+
+    buildTrail();
+    renderLeaf(line, line.stations[state.stationIndex]);
+    controlsEl.style.display = "flex";
+  }
+
+  function renderRootQuestion() {
+    var qnode = document.createElement("div");
+    qnode.className = "qnode";
+
+    var dot = document.createElement("span");
+    dot.className = "node-dot";
+    dot.style.borderColor = "#C1502E";
+
+    var card = document.createElement("div");
+    card.className = "qcard";
+
+    var qlabel = document.createElement("div");
+    qlabel.className = "qlabel";
+    qlabel.textContent = "Étape 1";
+
+    var qtext = document.createElement("p");
+    qtext.className = "qtext";
+    qtext.textContent = "Quelle activité langagière correspond à ton devoir ?";
+
+    card.appendChild(qlabel);
+    card.appendChild(qtext);
+
+    for (var i = 0; i < data.lines.length; i++) {
+      card.appendChild(buildChoiceButton(data.lines[i], (function (l) {
+        return function () {
+          state.lineId = l.id;
+          state.stationIndex = null;
+          render();
+          window.scrollTo(0, document.body.scrollHeight);
+        };
+      })(data.lines[i])));
+    }
+
+    qnode.appendChild(dot);
+    qnode.appendChild(card);
+    activeEl.appendChild(qnode);
+  }
+
+  function renderStationQuestion(line) {
+    var qnode = document.createElement("div");
+    qnode.className = "qnode has-parent";
+
+    var dot = document.createElement("span");
+    dot.className = "node-dot";
+    dot.style.borderColor = line.color;
+
+    var card = document.createElement("div");
+    card.className = "qcard";
+
+    var qlabel = document.createElement("div");
+    qlabel.className = "qlabel";
+    qlabel.style.color = line.color;
+    qlabel.textContent = "Étape 2";
+
+    var qtext = document.createElement("p");
+    qtext.className = "qtext";
+    qtext.textContent = "Précise ta situation :";
+
+    card.appendChild(qlabel);
+    card.appendChild(qtext);
+
+    for (var i = 0; i < line.stations.length; i++) {
+      card.appendChild(buildChoiceButton({ icon: "→", name: line.stations[i].q, color: line.color }, (function (idx) {
+        return function () {
+          state.stationIndex = idx;
+          render();
+          window.scrollTo(0, document.body.scrollHeight);
+        };
+      })(i)));
+    }
+
+    qnode.appendChild(dot);
+    qnode.appendChild(card);
+    activeEl.appendChild(qnode);
+  }
+
+  function renderLeaf(line, station) {
+    var qnode = document.createElement("div");
+    qnode.className = "qnode has-parent";
+
+    var dot = document.createElement("span");
+    dot.className = "node-dot";
+    dot.style.borderColor = line.color;
+    dot.style.background = line.color;
+
+    var leaf = document.createElement("div");
+    leaf.className = "leaf";
+    leaf.style.borderColor = line.color;
+
+    var label = document.createElement("div");
+    label.className = "leaf-label";
+    label.style.color = line.color;
+    label.textContent = "🏁 Ce que tu peux faire";
+    leaf.appendChild(label);
+
+    if (station.strategie) {
+      var strat = document.createElement("div");
+      strat.className = "strategie-badge";
+      strat.textContent = "🎯 Stratégie : " + station.strategie;
+      leaf.appendChild(strat);
+    }
+
+    var ul = document.createElement("ul");
+    for (var j = 0; j < station.tips.length; j++) {
+      var li = document.createElement("li");
+      li.textContent = station.tips[j];
+      ul.appendChild(li);
+    }
+    leaf.appendChild(ul);
+
+    if (station.astuce) {
+      var astuce = document.createElement("div");
+      astuce.className = "astuce";
+      astuce.style.borderLeftColor = line.color;
+      var b = document.createElement("b");
+      b.textContent = "Astuce — ";
+      astuce.appendChild(b);
+      astuce.appendChild(document.createTextNode(station.astuce));
+      leaf.appendChild(astuce);
+    }
+
+    qnode.appendChild(dot);
+    qnode.appendChild(leaf);
+    activeEl.appendChild(qnode);
+  }
+
+  function buildChoiceButton(item, onClick) {
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "choice-btn";
+
+    var iconSpan = document.createElement("span");
+    iconSpan.className = "choice-icon";
+    iconSpan.textContent = item.icon;
+
+    var textSpan = document.createElement("span");
+    textSpan.className = "choice-text";
+    textSpan.textContent = item.name;
+
+    btn.appendChild(iconSpan);
+    btn.appendChild(textSpan);
+
+    if (item.code) {
+      var codeSpan = document.createElement("span");
+      codeSpan.className = "choice-code";
+      codeSpan.textContent = item.code;
+      btn.appendChild(codeSpan);
+    }
+
+    var arrow = document.createElement("span");
+    arrow.className = "choice-arrow";
+    arrow.textContent = "›";
+    arrow.setAttribute("aria-hidden", "true");
+    btn.appendChild(arrow);
+
+    btn.addEventListener("click", onClick);
+    return btn;
+  }
+
+  backBtn.addEventListener("click", function () {
+    var line = currentLine();
+    if (state.stationIndex !== null) {
+      if (line && line.stations.length === 1) {
+        state.lineId = null;
+        state.stationIndex = null;
+      } else {
+        state.stationIndex = null;
+      }
+    } else if (state.lineId !== null) {
+      state.lineId = null;
+    }
+    render();
+  });
+
+  restartBtn.addEventListener("click", function () {
+    state.lineId = null;
+    state.stationIndex = null;
+    render();
+  });
+
+  render();
+})();
+</script>
+
+</body>
+</html>

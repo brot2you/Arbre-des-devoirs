@@ -698,7 +698,7 @@ function wisdomScreen(c){
   section='<div class="wisdom-result-title"><strong>✦ La piste d’Ollie : '+esc(s.strategy)+'</strong><p>'+esc(s.q)+'</p></div>'+
    '<div class="wisdom-guides"><article><strong>🌱 Ton prochain petit pas</strong><p>'+esc(primary)+'</p></article><article><strong>🦉 Si tu bloques encore</strong><p>'+esc(fallback)+'</p></article></div>'+
    '<div class="wisdom-actions"><button class="btn" data-action="method" data-cat="'+c.id+'" data-index="'+i+'">📖 Ouvrir la méthode</button>'+
-   '<button class="btn secondary" data-action="method" data-cat="'+c.id+'" data-index="'+j+'">🧭 '+(single?'Consulter SOS':'Autre piste : '+esc(alt.strategy))+'</button></div>'+
+   (single?'<button class="btn secondary" data-action="home">🌳 Explorer une autre branche</button>':'<button class="btn secondary" data-action="method" data-cat="'+c.id+'" data-index="'+j+'">🧭 Autre piste : '+esc(alt.strategy)+'</button>')+'</div>'+
    '<div class="wisdom-mini"><span class="wisdom-eyebrow">✧ UN MINI-DÉFI POUR RÉFLÉCHIR</span><h4>Et toi, que ferais-tu ?</h4><p>'+esc(quiz[0])+'</p>'+
    '<div class="wisdom-choices vertical">'+quiz[1].split('|').map((o,n)=>'<button class="wisdom-choice" aria-pressed="'+(answer===n)+'" data-action="wisdomQuiz" data-cat="'+c.id+'" data-index="'+i+'" data-value="'+n+'"><span class="wisdom-n">'+(n+1)+'</span>'+esc(o)+'</button>').join('')+'</div>'+feedback+'</div>'+
    '<button class="wisdom-link" data-action="wisdomReset" data-cat="'+c.id+'">↻ Recommencer mon diagnostic</button>';

@@ -3,11 +3,11 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="application-name" content="L’Arbre des devoirs V6.3">
+ <meta name="application-name" content="L’Arbre des devoirs V6.4">
  <meta name="theme-color" content="#16372f">
- <meta name="app-version" content="6.3-clean-grimoire">
+ <meta name="app-version" content="6.4-icons-fixed">
 <meta name="description" content="L'Arbre des devoirs : trouve une stratégie pour progresser en anglais, explore les sept branches et fais grandir ton autonomie.">
- <title>L'Arbre des devoirs · The Enchanted Tree V6.3 · Brot2You</title>
+ <title>L'Arbre des devoirs · The Enchanted Tree V6.4 · Brot2You</title>
  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTUiIGZpbGw9IiMxNjM3MmYiLz48cGF0aCBkPSJNMzEgNTFWMjhtMCAxMi05LThtOSAyIDEwLTEwIiBzdHJva2U9IiNkNmFhNjkiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTMxIDVjLTkgMC0xOSA2LTIwIDE3QzIgMjkgOSA0MSAyMCA0MGM1IDggMTkgOSAyNSAwIDE1IDAgMTgtMTcgOC0yNEM0OSA4IDQwIDQgMzEgNVoiIGZpbGw9IiM2NDk1NjciIHN0cm9rZT0iI2Q4YzU3YSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0ibTMxIDUxLTEyIDZtMTItNiAxMyA2IiBzdHJva2U9IiNkNmFhNjkiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+Cg==" type="image/svg+xml">
  <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700;800&display=swap');
@@ -329,12 +329,27 @@ body.reduce-motion .ollie-portrait,body.reduce-motion .ollie-home-portrait,body.
 }
 @media(prefers-reduced-motion:reduce){.v5-owl .ollie-painted{animation:none!important}}
 body.reduce-motion .v5-owl .ollie-painted{animation:none!important}
+
+/* V6.4 — Médaillons complets : recadrage refait depuis la planche originale
+   et espace de sécurité à l'intérieur de chaque icône. */
+.v6-crest{overflow:visible!important;flex-shrink:0;display:inline-grid;place-items:center;isolation:isolate;padding:6px!important}
+.v6-crest .painted-icon{display:block;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;filter:drop-shadow(0 2px 2px #32241457)}
+.v6-crest.small{padding:3px!important}
+.v5-cover-category{overflow:visible!important;display:flex;align-items:center;gap:9px;flex-wrap:nowrap;min-height:70px;padding:6px 11px}
+.v5-cover-category .painted-icon{width:58px!important;height:64px!important;flex:0 0 58px!important;min-width:0;max-width:58px!important;object-fit:contain!important;object-position:center!important;border:0!important;background:transparent!important;padding:0!important;margin:0!important;box-shadow:none!important}
+.v5-cover-category span{flex:1 1 0;min-width:0;text-align:left}
+.v5-note .icon{overflow:visible;display:grid;place-items:center}
+.v5-note .icon .painted-icon{width:47px!important;height:47px!important;max-height:100%;object-fit:contain!important;padding:0!important;border:0!important}
+.journal-item .ji-icon{display:grid;place-items:center;flex:0 0 44px;min-width:44px}
+.journal-item .v6-crest.small{width:43px;height:43px;flex:0 0 43px}
+.v6-band .v6-crest{overflow:visible!important}
+@media(max-width:650px){.v5-cover-category{min-height:59px;padding:4px 7px}.v5-cover-category .painted-icon{width:49px!important;height:55px!important;flex-basis:49px!important;max-width:49px!important}.v6-band .v6-crest{padding:3px!important}}
 </style>
 </head>
 <body>
 <div class="page">
  <header class="site-header">
-  <button class="brand" data-action="home" aria-label="Revenir à l’accueil"><span class="brand-icon" aria-hidden="true">🌳</span><span><span class="brand-text">L’Arbre des devoirs</span><small>By Brot2You · English skills · V6.3 · Clean Grimoire</small></span></button>
+  <button class="brand" data-action="home" aria-label="Revenir à l’accueil"><span class="brand-icon" aria-hidden="true">🌳</span><span><span class="brand-text">L’Arbre des devoirs</span><small>By Brot2You · English skills · V6.4 · Icônes corrigées</small></span></button>
   <nav class="header-actions" id="top-nav" aria-label="Navigation principale"></nav>
  </header>
  <main id="app" class="site-main" aria-live="polite"></main>
@@ -618,7 +633,7 @@ function v6Crest(id,size=''){return '<span class="v6-crest '+size+'" aria-hidden
 function storybookIcon(type){
  const map={co:'listening',ce:'reading',ee:'writing',eoc:'speaking',eoi:'interaction',mediation:'mediation',stuck:'sos',lens:'listening',key:'reading',flower:'sos'};
  const icon=map[type]||'reading';
- return '<img class="v5-icon painted-icon" src="assets/painted/icon-'+icon+'.webp" alt="" loading="lazy" decoding="async">';
+ return '<img class="v5-icon painted-icon" src="assets/painted/icon-'+icon+'.webp?v=6.4" alt="" loading="lazy" decoding="async">';
 }
 
 
@@ -648,7 +663,7 @@ function methodViewV5(){
     <div class="v5-feedback"><h3 style="font-size:23px">As-tu essayé cette piste ?</h3>${v5Feedback(c,st)}</div>`
  ];
  const names=['1 · Observer','2 · Essayer','3 · Retenir'];
- return content(`${crumb(c,'Mon grimoire')}<div class="v5-title"><div class="section-tag">✦ THE ENCHANTED TREE · V6.3 ✦</div><h2>Le Grimoire des stratégies</h2><p>Trois petits chapitres pour apprendre à apprendre</p></div>
+ return content(`${crumb(c,'Mon grimoire')}<div class="v5-title"><div class="section-tag">✦ THE ENCHANTED TREE · V6.4 ✦</div><h2>Le Grimoire des stratégies</h2><p>Trois petits chapitres pour apprendre à apprendre</p></div>
  <div class="v5-binding"><div class="v5-spread">
   <section class="v5-left"><small>✧ BROT2YOU · ENGLISH SKILLS ✧</small><div class="v5-owl painted-ollie-wrap" aria-hidden="true">${storybookOllie(p)}</div><small>${esc(c.en)} · ${state.index+1}/${c.stations.length}</small><h3>${esc(s.strategy)}</h3><p class="v5-cover-category">${storybookIcon(c.id)}<span>${esc(c.name)}</span></p>
    <div class="v5-step-one"><strong>🌱 Ton premier petit pas</strong><p>${esc(s.action)}</p></div>

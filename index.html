@@ -3,11 +3,11 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="application-name" content="L’Arbre des devoirs V6.4">
+ <meta name="application-name" content="L’Arbre des devoirs V7">
  <meta name="theme-color" content="#16372f">
- <meta name="app-version" content="6.4-icons-fixed">
+ <meta name="app-version" content="7-wisdom-tree">
 <meta name="description" content="L'Arbre des devoirs : trouve une stratégie pour progresser en anglais, explore les sept branches et fais grandir ton autonomie.">
- <title>L'Arbre des devoirs · The Enchanted Tree V6.4 · Brot2You</title>
+ <title>L'Arbre des devoirs · The Wisdom Tree V7 · Brot2You</title>
  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTUiIGZpbGw9IiMxNjM3MmYiLz48cGF0aCBkPSJNMzEgNTFWMjhtMCAxMi05LThtOSAyIDEwLTEwIiBzdHJva2U9IiNkNmFhNjkiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTMxIDVjLTkgMC0xOSA2LTIwIDE3QzIgMjkgOSA0MSAyMCA0MGM1IDggMTkgOSAyNSAwIDE1IDAgMTgtMTcgOC0yNEM0OSA4IDQwIDQgMzEgNVoiIGZpbGw9IiM2NDk1NjciIHN0cm9rZT0iI2Q4YzU3YSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0ibTMxIDUxLTEyIDZtMTItNiAxMyA2IiBzdHJva2U9IiNkNmFhNjkiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+Cg==" type="image/svg+xml">
  <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700;800&display=swap');
@@ -344,12 +344,39 @@ body.reduce-motion .v5-owl .ollie-painted{animation:none!important}
 .journal-item .v6-crest.small{width:43px;height:43px;flex:0 0 43px}
 .v6-band .v6-crest{overflow:visible!important}
 @media(max-width:650px){.v5-cover-category{min-height:59px;padding:4px 7px}.v5-cover-category .painted-icon{width:49px!important;height:55px!important;flex-basis:49px!important;max-width:49px!important}.v6-band .v6-crest{padding:3px!important}}
+
+/* V7: The Wisdom Tree - diagnostic & remédiation sans altérer le grimoire */
+.wisdom{position:relative;margin:20px 0 25px;padding:22px 19px;border:2px solid #ba965e;border-radius:17px;background:linear-gradient(145deg,#fffaf0,#f0debc);box-shadow:inset 0 0 0 3px #fff8ea,0 10px 25px #69513330}
+.wisdom:before{content:"";position:absolute;inset:7px;border:1px solid #d4ba8e;border-radius:10px;pointer-events:none}
+.wisdom-head{display:flex;align-items:center;gap:13px;position:relative}.wisdom-head .v6-crest{width:61px;height:61px;flex:0 0 61px}
+.wisdom-head h3{font-size:27px;color:#315640;margin:1px 0}.wisdom-head p{font-size:12px;color:#756143;margin:2px 0}
+.wisdom-eyebrow{letter-spacing:.14em;font-size:10px;color:#977342;font-weight:800;display:block}
+.wisdom-steps{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.wisdom-steps span{padding:6px 10px;border-radius:20px;border:1px solid #d5bd93;background:#fffaee;font-size:11px;color:#755e3f;font-weight:800}
+.wisdom-steps .active{background:#315c43;color:#fff2d5;border-color:#315c43}
+.wisdom-body{position:relative}.wisdom-body h4{font:700 25px/1.12 'Cormorant Garamond',Georgia,serif;color:#315440;margin:10px 0 8px}
+.wisdom-body>p{font-size:13px;line-height:1.6;color:#725e43}
+.wisdom-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:14px 0}.wisdom-choices.vertical{grid-template-columns:1fr}
+.wisdom-choice{display:flex;gap:10px;align-items:center;text-align:left;border:1px solid #c6a775;border-radius:12px;background:#fffcf3;color:#3d5945;padding:12px;font-size:12px;font-weight:700;min-height:55px;box-shadow:0 3px 9px #674b291a}
+.wisdom-choice:hover{background:#e7eedb;border-color:#739777}.wisdom-choice:focus-visible{outline-color:#345d46}
+.wisdom-choice[aria-pressed=true]{background:#d9e9d1;border-color:#497d54;box-shadow:inset 0 0 0 1px #497d54}
+.wisdom-n{flex:0 0 27px;height:27px;border:1px solid #bda676;border-radius:50%;background:#f2e5ca;color:#684d28;display:grid;place-items:center;font-size:11px}
+.wisdom-result-title{background:#274d3d;border:1px solid #d5b57d;border-radius:11px;padding:14px;color:#f8e9c5;margin:14px 0}.wisdom-result-title strong{font:700 23px 'Cormorant Garamond',Georgia,serif}.wisdom-result-title p{font-size:12px;margin:4px 0 0;color:#e8e6d2}
+.wisdom-guides{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:13px 0}.wisdom-guides article{border:1px solid #d6b788;background:#fffbf0;border-radius:11px;padding:13px}
+.wisdom-guides article:nth-child(2){background:#e7eedb;border-color:#a9bc91}.wisdom-guides strong{font:700 21px 'Cormorant Garamond',Georgia,serif;color:#345b44}.wisdom-guides p{font-size:12px;line-height:1.62;color:#665640;margin:7px 0 0}
+.wisdom-actions{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}.wisdom-actions .btn{font-size:12px;padding:10px 13px}
+.wisdom-mini{background:#eef2df;border:1px solid #a7bd92;border-radius:13px;padding:14px;margin:16px 0 10px}.wisdom-mini h4{margin:4px 0}
+.wisdom-mini .wisdom-choices{grid-template-columns:1fr}.wisdom-mini .wisdom-choice{min-height:45px;padding:10px}
+.wisdom-feedback{padding:12px;background:#fffdf2;border:1px solid #b8b192;border-radius:9px;font-size:12px;line-height:1.6;margin-top:11px;color:#485842}
+.wisdom-feedback strong{display:block;color:#325c40}.wisdom-link{padding:7px 0;border:0;background:transparent;text-decoration:underline;color:#735337;font-size:12px;font-weight:800}
+.wisdom-grimoire-link{display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap;background:#f1e7d0;border:1px solid #bd9d6b;border-radius:11px;padding:11px 13px;margin:14px 0}
+.wisdom-grimoire-link span{font-size:12px;color:#395b43}.wisdom-grimoire-link .btn{font-size:11px;padding:8px 10px}
+@media(max-width:670px){.wisdom{padding:15px 12px}.wisdom-head h3{font-size:25px}.wisdom-choices,.wisdom-guides{grid-template-columns:1fr}.wisdom-head .v6-crest{height:51px;width:51px;flex-basis:51px}}
 </style>
 </head>
 <body>
 <div class="page">
  <header class="site-header">
-  <button class="brand" data-action="home" aria-label="Revenir à l’accueil"><span class="brand-icon" aria-hidden="true">🌳</span><span><span class="brand-text">L’Arbre des devoirs</span><small>By Brot2You · English skills · V6.4 · Icônes corrigées</small></span></button>
+  <button class="brand" data-action="home" aria-label="Revenir à l’accueil"><span class="brand-icon" aria-hidden="true">🌳</span><span><span class="brand-text">L’Arbre des devoirs</span><small>By Brot2You · English skills · V7 · Wisdom Tree</small></span></button>
   <nav class="header-actions" id="top-nav" aria-label="Navigation principale"></nav>
  </header>
  <main id="app" class="site-main" aria-live="polite"></main>
@@ -425,13 +452,15 @@ const modalRoot=document.getElementById('modal-root');
 const toastRoot=document.getElementById('toast-root');
 const STORAGE='brot2you-arbre-enchanted-v1';
 const validKeys=new Set(DATA.flatMap(cat=>cat.stations.map((s,i)=>cat.id+':'+i)));
-const state={page:'home',cat:null,index:null,history:[],check:null,filter:'all',settingsOpen:false,ollieHint:0,bookPage:0,
- data:{saved:[],tried:{},sound:false,reduced:false,bookChecks:{},bookNotes:{}},newestLeaf:null};
+const state={page:'home',cat:null,index:null,history:[],check:null,filter:'all',settingsOpen:false,ollieHint:0,bookPage:0,wisdomDraft:null,
+ data:{saved:[],tried:{},sound:false,reduced:false,bookChecks:{},bookNotes:{},diagnostic:{},miniAnswers:{}},newestLeaf:null};
 let audioContext;
 function load(){try{const value=JSON.parse(localStorage.getItem(STORAGE)||'null');if(!value||typeof value!=='object')return;
 state.data.saved=Array.isArray(value.saved)?value.saved.filter(x=>validKeys.has(x)):[];
 state.data.tried=value.tried && typeof value.tried==='object'?Object.fromEntries(Object.entries(value.tried).filter(([k,v])=>validKeys.has(k)&&['tried','helpful','needhelp'].includes(v))):{};
-state.data.sound=!!value.sound;state.data.reduced=!!value.reduced;state.data.bookChecks=value.bookChecks&&typeof value.bookChecks==='object'?Object.fromEntries(Object.entries(value.bookChecks).filter(([k,v])=>validKeys.has(k)&&Array.isArray(v)).map(([k,v])=>[k,[...new Set(v.filter(n=>Number.isInteger(n)&&n>=0&&n<10))]])):{};state.data.bookNotes=value.bookNotes&&typeof value.bookNotes==='object'?Object.fromEntries(Object.entries(value.bookNotes).filter(([k,v])=>validKeys.has(k)&&typeof v==='string').map(([k,v])=>[k,v.slice(0,300)])):{};}catch(e){}}
+state.data.sound=!!value.sound;state.data.reduced=!!value.reduced;state.data.bookChecks=value.bookChecks&&typeof value.bookChecks==='object'?Object.fromEntries(Object.entries(value.bookChecks).filter(([k,v])=>validKeys.has(k)&&Array.isArray(v)).map(([k,v])=>[k,[...new Set(v.filter(n=>Number.isInteger(n)&&n>=0&&n<10))]])):{};state.data.bookNotes=value.bookNotes&&typeof value.bookNotes==='object'?Object.fromEntries(Object.entries(value.bookNotes).filter(([k,v])=>validKeys.has(k)&&typeof v==='string').map(([k,v])=>[k,v.slice(0,300)])):{};
+state.data.diagnostic=value.diagnostic&&typeof value.diagnostic==='object'?Object.fromEntries(Object.entries(value.diagnostic).filter(([id,v])=>{const c=catById(id);return c&&v&&Number.isInteger(v.index)&&v.index>=0&&v.index<c.stations.length&&['start','trying','alternative'].includes(v.level)}).map(([id,v])=>[id,{index:v.index,level:v.level}])):{};
+state.data.miniAnswers=value.miniAnswers&&typeof value.miniAnswers==='object'?Object.fromEntries(Object.entries(value.miniAnswers).filter(([k,v])=>validKeys.has(k)&&Number.isInteger(v)&&v>=0&&v<=2)):{};}catch(e){}}
 function persist(){try{localStorage.setItem(STORAGE,JSON.stringify(state.data))}catch(e){toast('La sauvegarde locale est indisponible sur cet appareil.')}}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function catById(id){return DATA.find(c=>c.id===id)}
@@ -477,7 +506,7 @@ function owlMagic(kind='flower'){
  document.body.appendChild(layer);setTimeout(()=>layer.remove(),1850)
 }
 function toast(message){toastRoot.innerHTML=`<div class="toast" role="status">${esc(message)}</div>`;clearTimeout(toastRoot.timer);toastRoot.timer=setTimeout(()=>toastRoot.innerHTML='',2800)}
-function navigate(page,cat=null,index=null,fromHistory=false){if(!fromHistory)state.history.push({page:state.page,cat:state.cat,index:state.index,filter:state.filter});state.page=page;state.cat=cat;state.index=index;state.check=null;state.ollieHint=0;state.bookPage=0;render();window.scrollTo({top:0,behavior:state.data.reduced?'auto':'smooth'})}
+function navigate(page,cat=null,index=null,fromHistory=false){if(!fromHistory)state.history.push({page:state.page,cat:state.cat,index:state.index,filter:state.filter});state.page=page;state.cat=cat;state.index=index;state.check=null;state.ollieHint=0;state.bookPage=0;state.wisdomDraft=null;render();window.scrollTo({top:0,behavior:state.data.reduced?'auto':'smooth'})}
 function back(){const old=state.history.pop();if(old){state.page=old.page;state.cat=old.cat;state.index=old.index;state.filter=old.filter||'all';state.check=null;state.ollieHint=0;render()}else navigate('home',null,null,true)}
 function home(){state.history=[];state.ollieHint=0;navigate('home',null,null,true)}
 function header(){const st=stats();document.getElementById('top-nav').innerHTML=`<button class="header-btn" data-action="home" aria-label="Retour à l'arbre">🌳 <span class="hide-mobile">L’arbre</span></button><button class="header-btn" data-action="journal" data-filter="all">📖 <span class="hide-mobile">Mon grimoire</span></button><button class="header-btn" data-action="journal" data-filter="tried">🍃 <span class="hide-mobile">Mes feuilles</span> <span class="pill-count">${st.attempt}</span></button><button class="header-btn" data-action="settings" aria-label="Réglages">⚙️</button>`;document.body.classList.toggle('reduce-motion',state.data.reduced)}
@@ -600,7 +629,87 @@ function homeOllie(){const g=ollieGuidance();return `<section class="ollie-home"
 
 function content(body,speech='Chaque difficulté peut devenir une piste !'){return `<div class="content-layout">${companion(speech)}<article class="parchment parchment-v4">${body}</article></div>`}
 function crumb(cat,where){return `<nav class="crumb" aria-label="Fil d'Ariane"><button data-action="home">🌳 L’arbre</button><span>›</span>${cat?`<button data-action="cat" data-cat="${cat.id}">${esc(cat.en)}</button><span>›</span>`:''}<span>${esc(where)}</span></nav>`}
-function categoryView(){const c=catById(state.cat);if(!c)return homeView();return content(`${crumb(null,c.en)}<div class="v6-band">${v6Crest(c.id)}<div><small>✦ BRANCHE ${esc(c.code)} · ${c.stations.length} SITUATIONS</small><h2>${esc(c.en)}</h2><p>${esc(c.name)} · Choisis la situation qui te correspond.</p></div></div><p class="lead">Ollie t’accompagne. Il n’y a pas de mauvaise réponse.</p><div class="category-growth">🍃 ${branchStats(c).tried}/${c.stations.length} feuilles sur cette branche · 🌸 ${branchStats(c).helpful} fleurs</div><div class="station-list">${c.stations.map((s,i)=>{const st=status(c.id,i);return `<button class="station-btn" data-action="method" data-cat="${c.id}" data-index="${i}"><span class="station-num">${st==='helpful'?'🌸':st?'🍃':i+1}</span><span><span class="station-title">${esc(s.q)}</span><span class="station-sub">${st==='helpful'?'Fleur épanouie · Cette méthode m’a aidé':st?'Méthode déjà essayée':saved(c.id,i)?'Enregistrée dans mon carnet':'Découvrir une stratégie'}</span></span><span class="arrow">➜</span></button>`}).join('')}</div><div class="btn-row"><button class="btn secondary" data-action="back">← Revenir</button><button class="btn tertiary" data-action="home">🌳 Retour à l’arbre</button></div>`,`Dans cette branche, tu trouveras ${c.stations.length} situations possibles. Laquelle te parle le plus ?`)}
+
+/* V7 — The Wisdom Tree: two-step personalised diagnosis and 24 method quizzes. */
+const WISDOM_ALTS={co:[2,0,1,0],ce:[2,0,1,1],ee:[1,0,0,2],eoc:[5,0,0,5,3,0],eoi:[1,2,0],mediation:[1,0],stuck:[0]};
+/* For each situation: question ~ options separated with | ~ answer index ~ explanation */
+const WISDOM_QUIZZES={
+ co:[
+ ["Première écoute : quel objectif ?","Trouver le thème global|Traduire chaque mot|Tout noter",0,"Une écoute globale donne des repères avant les détails."],
+ ["Tu recherches un âge dans un audio. Comment faire ?","Écouter sans objectif|Repérer les nombres|Deviner",1,"Une écoute sélective cible les informations utiles."],
+ ["Un mot est incompris. Quelle réaction ?","Arrêter définitivement|Tout traduire|Poursuivre grâce au contexte",2,"Un mot inconnu n'empêche pas forcément de comprendre."],
+ ["Quelle prise de notes est utile ?","Mots-clés et symboles|Phrases intégrales|Mots inconnus seulement",0,"Les mots-clés évitent de manquer la suite de l'audio."]
+ ],
+ ce:[
+ ["Avant de lire un article, que regarder ?","La dernière phrase|Titre, image et source|Tous les mots à traduire",1,"Les indices extérieurs annoncent le thème."],
+ ["Une question demande où se passe l'histoire.","Inventer le lieu|Lire sans objectif|Repérer les indices spatiaux",2,"La lecture de repérage répond à une question précise."],
+ ["Tu ne connais pas un adjectif. Que faire ?","Utiliser la phrase autour|Abandonner|Traduire tout le texte",0,"Le contexte permet de faire une hypothèse."],
+ ["Une interprétation convaincante contient…","Seulement une opinion|Une opinion et un indice du texte|Une affirmation sans justification",1,"On argumente en s'appuyant sur ce qu'on a lu."]
+ ],
+ ee:[
+ ["Avant de commencer un courriel, que faire ?","Écrire au hasard|Chercher dix mots|Identifier le destinataire et trois idées",2,"Un petit plan aide à se lancer."],
+ ["Une phrase est trop complexe :","La couper en deux phrases simples|La supprimer sans réfléchir|Mélanger français et anglais",0,"Une reformulation simple communique mieux."],
+ ["Pour te relire, commence par…","Tout corriger à la fois|Vérifier un seul point grammatical|Compter les mots uniquement",1,"Une relecture ciblée est efficace."],
+ ["Pour enrichir « It is nice », tu peux…","Ajouter des mots difficiles partout|Supprimer la phrase|Donner une raison avec because",2,"Un détail pertinent enrichit le texte."]
+ ],
+ eoc:[
+ ["Un exposé naturel se prépare avec…","Un plan et des mots-clés|Un texte à lire intégralement|Aucune préparation",0,"Les mots-clés encouragent une parole plus spontanée."],
+ ["Après un essai oral hésitant, tu peux…","Tout abandonner|Retravailler un seul passage|Parler encore plus vite",1,"De petits essais répétés font progresser."],
+ ["Avant de parler si tu hésites :","Attendre la perfection|Réciter vite|Commencer par une phrase connue",2,"Un petit premier pas est utile."],
+ ["Pour décrire une photographie :","Général, premier plan, arrière-plan|Détails au hasard|Opinion sans description",0,"L'ordre spatial clarifie la description."],
+ ["Pour interpréter une peinture, distingue…","Ce qui te plaît seulement|Ce que tu observes et ce que tu déduis|Ce que disent uniquement les autres",1,"L'analyse s'appuie sur des observations."],
+ ["Une présentation d'image suit plutôt…","Une liste sans ordre|La conclusion d'abord|Présentation, description, interprétation, conclusion",2,"Une progression claire aide à suivre."]
+ ],
+ eoi:[
+ ["Préparer un dialogue, c'est…","Anticiper questions et relances|Apprendre seulement sa première réplique|Écrire uniquement un monologue",0,"Une interaction demande d'écouter et de rebondir."],
+ ["Pour participer malgré une hésitation, tu peux dire…","I will never speak.|I think… / Maybe…|I am always right.",1,"Une amorce simple permet d'entrer dans l'échange."],
+ ["Tu ne comprends pas une question :","Répondre au hasard|Abandonner sans rien dire|Could you repeat, please?",2,"Demander une répétition est une vraie stratégie."]
+ ],
+ mediation:[
+ ["Pour expliquer un document à un ami :","Choisir l'essentiel et reformuler|Lire mot à mot|Ajouter des détails inutiles",0,"La médiation adapte le message à son destinataire."],
+ ["Pour transmettre un message dans une autre langue :","Traduire chaque mot littéralement|Reformuler le sens en anglais simple|Inventer des informations",1,"Transmettre le sens est plus important que traduire mot à mot."]
+ ],
+ stuck:[
+ ["Tu bloques : quelle première action ?","Abandonner immédiatement|Attendre sans agir|Nommer ton blocage et tenter une action",2,"Un obstacle précis appelle une stratégie précise."]
+ ]
+};
+function wisdomOther(c,i){
+ const priority=WISDOM_ALTS[c.id]?.[i]??0;
+ if(priority!==i&&status(c.id,priority)!=='helpful')return priority;
+ return c.stations.map((_,n)=>n).find(n=>n!==i&&status(c.id,n)!=='helpful')??(c.stations.length>1?(i+1)%c.stations.length:i);
+}
+function wisdomScreen(c){
+ const diag=state.data.diagnostic[c.id],draft=state.wisdomDraft?.cat===c.id?state.wisdomDraft:null;
+ const phase=draft?'experience':diag?'recommendation':'difficulty';
+ const active=phase==='difficulty'?0:phase==='experience'?1:2;
+ let section='';
+ if(phase==='difficulty'){
+  section='<h4>Quelle difficulté rencontres-tu ?</h4><p>Choisis la situation la plus proche de ton travail. Tu peux aussi consulter directement toutes les méthodes plus bas.</p><div class="wisdom-choices">'+c.stations.map((s,i)=>'<button class="wisdom-choice" data-action="wisdomPick" data-cat="'+c.id+'" data-index="'+i+'"><span class="wisdom-n">'+(i+1)+'</span>'+esc(s.q)+'</button>').join('')+'</div>';
+ } else if(phase==='experience'){
+  const q=c.stations[draft.index].q;
+  const opts=[['start','🌱','Je n’ai pas encore essayé'],['trying','🪶','J’ai commencé mais je bloque'],['alternative','🧭','J’ai déjà essayé, sans résultat']];
+  section='<h4>'+esc(q)+'</h4><p>Où en es-tu ? Ollie adaptera son conseil à ce que tu as déjà essayé.</p><div class="wisdom-choices vertical">'+opts.map(o=>'<button class="wisdom-choice" data-action="wisdomExperience" data-cat="'+c.id+'" data-value="'+o[0]+'"><span class="wisdom-n">'+o[1]+'</span>'+o[2]+'</button>').join('')+'</div><button class="wisdom-link" data-action="wisdomBack">← Changer ma difficulté</button>';
+ } else {
+  const i=diag.index,s=c.stations[i],j=wisdomOther(c,i),alt=c.stations[j],single=c.stations.length===1;
+  const quiz=WISDOM_QUIZZES[c.id][i],answer=state.data.miniAnswers[key(c.id,i)];
+  const primary=diag.level==='start'?s.action:diag.level==='trying'?s.tips[Math.min(1,s.tips.length-1)]:(single?c.help:alt.action);
+  const fallback=diag.level==='alternative'?'L’ancienne approche ne fonctionne pas encore : essaie une autre méthode sans te décourager.':diag.level==='trying'?'Concentre-toi sur un seul passage difficile avant de poursuivre.':'Applique ce premier petit pas sur ton vrai devoir, puis fais le point.';
+  const feedback=answer!==undefined?'<div class="wisdom-feedback" role="status"><strong>'+(answer===quiz[2]?'🍃 Bonne piste méthodologique !':'🌱 Essaie de comparer les stratégies.')+'</strong>'+esc(quiz[3])+'<br>Réponse conseillée : <b>'+esc(quiz[1].split('|')[quiz[2]])+'</b></div>':'';
+  section='<div class="wisdom-result-title"><strong>✦ La piste d’Ollie : '+esc(s.strategy)+'</strong><p>'+esc(s.q)+'</p></div>'+
+   '<div class="wisdom-guides"><article><strong>🌱 Ton prochain petit pas</strong><p>'+esc(primary)+'</p></article><article><strong>🦉 Si tu bloques encore</strong><p>'+esc(fallback)+'</p></article></div>'+
+   '<div class="wisdom-actions"><button class="btn" data-action="method" data-cat="'+c.id+'" data-index="'+i+'">📖 Ouvrir la méthode</button>'+
+   '<button class="btn secondary" data-action="method" data-cat="'+c.id+'" data-index="'+j+'">🧭 '+(single?'Consulter SOS':'Autre piste : '+esc(alt.strategy))+'</button></div>'+
+   '<div class="wisdom-mini"><span class="wisdom-eyebrow">✧ UN MINI-DÉFI POUR RÉFLÉCHIR</span><h4>Et toi, que ferais-tu ?</h4><p>'+esc(quiz[0])+'</p>'+
+   '<div class="wisdom-choices vertical">'+quiz[1].split('|').map((o,n)=>'<button class="wisdom-choice" aria-pressed="'+(answer===n)+'" data-action="wisdomQuiz" data-cat="'+c.id+'" data-index="'+i+'" data-value="'+n+'"><span class="wisdom-n">'+(n+1)+'</span>'+esc(o)+'</button>').join('')+'</div>'+feedback+'</div>'+
+   '<button class="wisdom-link" data-action="wisdomReset" data-cat="'+c.id+'">↻ Recommencer mon diagnostic</button>';
+ }
+ return '<section id="wisdom-diagnostic" class="wisdom" aria-label="Diagnostic avec Ollie"><div class="wisdom-head">'+v6Crest(c.id)+
+  '<div><span class="wisdom-eyebrow">✦ V7 · THE WISDOM TREE</span><h3>Ollie t’aide à choisir une méthode</h3><p>Deux questions, puis un conseil et un petit entraînement.</p></div></div>'+
+  '<div class="wisdom-steps" aria-label="Étapes du diagnostic">'+['Difficulté','Essai','Stratégie'].map((x,n)=>'<span class="'+(n===active?'active':'')+'">'+(n+1)+' · '+x+'</span>').join('')+
+  '</div><div class="wisdom-body">'+section+'</div></section>';
+}
+
+function categoryView(){const c=catById(state.cat);if(!c)return homeView();return content(`${crumb(null,c.en)}<div class="v6-band">${v6Crest(c.id)}<div><small>✦ BRANCHE ${esc(c.code)} · ${c.stations.length} SITUATIONS</small><h2>${esc(c.en)}</h2><p>${esc(c.name)} · Choisis la situation qui te correspond.</p></div></div><p class="lead">Ollie t’accompagne. Il n’y a pas de mauvaise réponse.</p>${wisdomScreen(c)}<div class="category-growth">🍃 ${branchStats(c).tried}/${c.stations.length} feuilles sur cette branche · 🌸 ${branchStats(c).helpful} fleurs</div><div class="station-list">${c.stations.map((s,i)=>{const st=status(c.id,i);return `<button class="station-btn" data-action="method" data-cat="${c.id}" data-index="${i}"><span class="station-num">${st==='helpful'?'🌸':st?'🍃':i+1}</span><span><span class="station-title">${esc(s.q)}</span><span class="station-sub">${st==='helpful'?'Fleur épanouie · Cette méthode m’a aidé':st?'Méthode déjà essayée':saved(c.id,i)?'Enregistrée dans mon carnet':'Découvrir une stratégie'}</span></span><span class="arrow">➜</span></button>`}).join('')}</div><div class="btn-row"><button class="btn secondary" data-action="back">← Revenir</button><button class="btn tertiary" data-action="home">🌳 Retour à l’arbre</button></div>`,`Dans cette branche, tu trouveras ${c.stations.length} situations possibles. Laquelle te parle le plus ?`)}
 function methodView(){return methodViewV5()}
 
 const V5_MISSIONS={
@@ -663,8 +772,8 @@ function methodViewV5(){
     <div class="v5-feedback"><h3 style="font-size:23px">As-tu essayé cette piste ?</h3>${v5Feedback(c,st)}</div>`
  ];
  const names=['1 · Observer','2 · Essayer','3 · Retenir'];
- return content(`${crumb(c,'Mon grimoire')}<div class="v5-title"><div class="section-tag">✦ THE ENCHANTED TREE · V6.4 ✦</div><h2>Le Grimoire des stratégies</h2><p>Trois petits chapitres pour apprendre à apprendre</p></div>
- <div class="v5-binding"><div class="v5-spread">
+ return content(`${crumb(c,'Mon grimoire')}<div class="v5-title"><div class="section-tag">✦ THE WISDOM TREE · V7 ✦</div><h2>Le Grimoire des stratégies</h2><p>Trois petits chapitres pour apprendre à apprendre</p></div>
+ <div class="wisdom-grimoire-link"><span>🧠 Pas sûr(e) d’avoir choisi la bonne méthode ?</span><button class="btn secondary" data-action="wisdomFromBook" data-cat="${c.id}" data-index="${state.index}">Demander à Ollie</button></div><div class="v5-binding"><div class="v5-spread">
   <section class="v5-left"><small>✧ BROT2YOU · ENGLISH SKILLS ✧</small><div class="v5-owl painted-ollie-wrap" aria-hidden="true">${storybookOllie(p)}</div><small>${esc(c.en)} · ${state.index+1}/${c.stations.length}</small><h3>${esc(s.strategy)}</h3><p class="v5-cover-category">${storybookIcon(c.id)}<span>${esc(c.name)}</span></p>
    <div class="v5-step-one"><strong>🌱 Ton premier petit pas</strong><p>${esc(s.action)}</p></div>
    <button class="star-btn ${fav?'active':''}" data-action="favorite" aria-pressed="${fav}">${fav?'★ Dans mon carnet':'☆ Garder dans mon carnet'}</button>
@@ -685,7 +794,14 @@ function journalView(){const s=stats();const all=[];DATA.forEach(c=>c.stations.f
 function render(){header();main.innerHTML=state.page==='home'?homeView():state.page==='category'?categoryView():state.page==='method'?methodView():journalView();main.setAttribute('aria-label',state.page==='home'?'Arbre des stratégies':state.page==='category'?'Situations':state.page==='method'?'Conseils et stratégie':'Carnet de stratégies');renderModal()}
 function renderModal(){if(!state.settingsOpen){modalRoot.innerHTML='';return}modalRoot.innerHTML=`<div class="modal-wrap" data-dismiss="modal"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="settings-title"><button class="close" data-action="closeSettings" aria-label="Fermer les réglages">×</button><div class="section-tag">⚙️ PERSONNALISER L’AVENTURE</div><h2 id="settings-title">Réglages</h2><p>À ton rythme, dans ta forêt.</p><div class="settings-row"><label for="setting-sound">🔔 Sons doux des boutons</label><input id="setting-sound" type="checkbox" data-setting="sound" ${state.data.sound?'checked':''}></div><div class="settings-row"><label for="setting-motion">🍃 Réduire les animations</label><input id="setting-motion" type="checkbox" data-setting="reduced" ${state.data.reduced?'checked':''}></div><div class="settings-row"><div><b>Effacer mes progrès</b><br><small>Efface favoris et feuilles de cet appareil.</small></div><button class="danger" data-action="reset">Effacer</button></div><p class="myth">Aucun compte nécessaire. Les progrès sont sauvegardés uniquement dans ce navigateur.</p><button class="btn" data-action="closeSettings">Fermer</button></div></div>`;modalRoot.querySelector('.close').focus()}
 function handleAction(button){const a=button.dataset.action;const id=button.dataset.cat;const i=Number(button.dataset.index);
- if(a==='bookPage'){const p=Number(button.dataset.page);if(Number.isInteger(p)&&p>=0&&p<=2){state.bookPage=p;render();play();const el=main.querySelector('.v5-title h2');if(el){el.setAttribute('tabindex','-1');el.focus({preventScroll:true})}}}
+ 
+ if(a==='wisdomPick'){const c=catById(id);if(c&&Number.isInteger(i)&&i>=0&&i<c.stations.length){state.wisdomDraft={cat:id,index:i};render();play()}}
+ else if(a==='wisdomBack'){state.wisdomDraft=null;render();play()}
+ else if(a==='wisdomExperience'){const d=state.wisdomDraft,level=button.dataset.value;if(d&&d.cat===id&&['start','trying','alternative'].includes(level)){state.data.diagnostic[id]={index:d.index,level};state.wisdomDraft=null;persist();render();play()}}
+ else if(a==='wisdomQuiz'){const d=state.data.diagnostic[id],v=Number(button.dataset.value);if(d&&d.index===i&&Number.isInteger(v)&&v>=0&&v<=2){state.data.miniAnswers[key(id,i)]=v;persist();render();play()}}
+ else if(a==='wisdomReset'){delete state.data.diagnostic[id];state.wisdomDraft=null;persist();render();play()}
+ else if(a==='wisdomFromBook'){const c=catById(id);if(c?.stations[i]){state.data.diagnostic[id]=state.data.diagnostic[id]?.index===i?state.data.diagnostic[id]:{index:i,level:'start'};persist();navigate('category',id);play()}}
+ else if(a==='bookPage'){const p=Number(button.dataset.page);if(Number.isInteger(p)&&p>=0&&p<=2){state.bookPage=p;render();play();const el=main.querySelector('.v5-title h2');if(el){el.setAttribute('tabindex','-1');el.focus({preventScroll:true})}}}
  else if(a==='ollieTip'){state.ollieHint++;render();play();const t=main.querySelector('[data-action="ollieTip"]');if(t)t.focus({preventScroll:true})}
  else if(a==='home'){home();play()}
  else if(a==='back'){back();play()}
@@ -700,7 +816,7 @@ function handleAction(button){const a=button.dataset.action;const id=button.data
  else if(a==='feedback'){state.ollieHint=0;const k=key(state.cat,state.index);const old=state.data.tried[k];state.data.tried[k]=button.dataset.value;if(!old||button.dataset.value==='helpful')state.newestLeaf=k;persist();render();play();if(button.dataset.value==='tried'&&!old){toast('🍃 Une feuille pousse sur ta branche !');owlMagic('leaf')}if(button.dataset.value==='helpful'){toast('🌸 La feuille de ta stratégie a fleuri !');owlMagic('flower')}}
  else if(a==='settings'){state.settingsOpen=true;renderModal();play()}
  else if(a==='closeSettings'){state.settingsOpen=false;renderModal()}
- else if(a==='reset'){if(window.confirm('Effacer toutes les feuilles essayées et tous les favoris enregistrés sur cet appareil ?')){state.data.saved=[];state.data.tried={};state.data.bookChecks={};state.data.bookNotes={};state.newestLeaf=null;persist();state.settingsOpen=false;state.history=[];state.page='home';render();toast('Ton arbre est prêt pour un nouveau départ.')}}
+ else if(a==='reset'){if(window.confirm('Effacer toutes les feuilles essayées et tous les favoris enregistrés sur cet appareil ?')){state.data.saved=[];state.data.tried={};state.data.bookChecks={};state.data.bookNotes={};state.data.diagnostic={};state.data.miniAnswers={};state.wisdomDraft=null;state.newestLeaf=null;persist();state.settingsOpen=false;state.history=[];state.page='home';render();toast('Ton arbre est prêt pour un nouveau départ.')}}
 }
 document.addEventListener('click',ev=>{const b=ev.target.closest('[data-action]');if(b){ev.preventDefault();handleAction(b)}else if(ev.target.dataset.dismiss==='modal'){state.settingsOpen=false;renderModal()}});
 document.addEventListener('change',ev=>{const setting=ev.target.dataset.setting;if(!setting)return;state.data[setting]=!!ev.target.checked;persist();document.body.classList.toggle('reduce-motion',state.data.reduced);toast(setting==='sound'?(state.data.sound?'Sons activés':'Sons désactivés'):'Préférence enregistrée');if(setting==='sound'&&state.data.sound)play()});

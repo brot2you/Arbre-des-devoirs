@@ -3,11 +3,11 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="application-name" content="L’Arbre des devoirs V6">
+ <meta name="application-name" content="L’Arbre des devoirs V6.2">
  <meta name="theme-color" content="#16372f">
- <meta name="app-version" content="6-enchanted-world">
+ <meta name="app-version" content="6.2-painted-assets">
 <meta name="description" content="L'Arbre des devoirs : trouve une stratégie pour progresser en anglais, explore les sept branches et fais grandir ton autonomie.">
- <title>L'Arbre des devoirs · The Enchanted Tree V6 · Brot2You</title>
+ <title>L'Arbre des devoirs · The Enchanted Tree V6.2 · Brot2You</title>
  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTUiIGZpbGw9IiMxNjM3MmYiLz48cGF0aCBkPSJNMzEgNTFWMjhtMCAxMi05LThtOSAyIDEwLTEwIiBzdHJva2U9IiNkNmFhNjkiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTMxIDVjLTkgMC0xOSA2LTIwIDE3QzIgMjkgOSA0MSAyMCA0MGM1IDggMTkgOSAyNSAwIDE1IDAgMTgtMTcgOC0yNEM0OSA4IDQwIDQgMzEgNVoiIGZpbGw9IiM2NDk1NjciIHN0cm9rZT0iI2Q4YzU3YSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0ibTMxIDUxLTEyIDZtMTItNiAxMyA2IiBzdHJva2U9IiNkNmFhNjkiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+Cg==" type="image/svg+xml">
  <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700;800&display=swap');
@@ -282,12 +282,38 @@ body.reduce-motion .ollie-portrait,body.reduce-motion .ollie-home-portrait,body.
 @media(max-width:1100px){.content-layout:has(.v5-binding){grid-template-columns:1fr}.content-layout:has(.v5-binding) .ollie-companion{position:static}}
 @media(max-width:650px){.v5-binding{padding:6px;border:3px solid #ad854d}.v5-spread{grid-template-columns:1fr}.v5-left{border-right:0;border-bottom:6px double #c8a56c;padding:12px 15px}.v5-left h3{font-size:24px}.v5-right{padding:22px 16px;min-height:0}.v5-owl{width:110px;height:90px}.v5-owl .ollie-svg{width:92px;height:90px}.v6-band{padding:12px;gap:10px}.v6-band .v6-crest{width:56px;height:56px;flex-basis:56px}}
 @media(prefers-reduced-motion:reduce){.v5-owl .ollie-svg{animation:none!important}}body.reduce-motion .v5-owl .ollie-svg{animation:none!important}
+
+/* V6.2 - Assets peints, images détourées, sans SVG */
+.ollie-painted{display:block;width:100%;height:100%;object-fit:contain;object-position:center;filter:drop-shadow(0 7px 7px #03170e87);user-select:none;pointer-events:none}
+.ollie-portrait,.ollie-home-portrait,.v5-owl{display:grid;place-items:center}
+.ollie-portrait .ollie-painted{width:95%;height:95%;max-height:260px}
+.ollie-home-portrait .ollie-painted{height:108px;width:100%;object-fit:contain}
+.v5-owl.painted-ollie-wrap{height:190px;max-width:228px;width:100%;margin:8px auto 10px;overflow:visible}
+.v5-owl.painted-ollie-wrap .ollie-painted{position:relative;width:100%;height:96%;max-width:211px;filter:drop-shadow(0 8px 7px #04180bb3);animation:paintedOllieHover 5s ease-in-out infinite}
+@keyframes paintedOllieHover{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.v5-cover-category .painted-icon{width:52px;height:55px;flex:0 0 52px;border:0;background:none;box-shadow:none;object-fit:contain;filter:drop-shadow(0 3px 4px #050f095e)}
+.v6-crest{overflow:visible}
+.v6-crest .painted-icon{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 3px #593e2699)}
+.v5-note .icon .painted-icon{width:42px!important;height:42px!important;object-fit:contain;filter:drop-shadow(0 2px 3px #74523265)}
+.painted-book-frame{background: url("assets/painted/book-open.webp") center/100% 100% no-repeat,linear-gradient(130deg,#e7c186,#694628 65%,#d5aa6c);border:0!important;padding:clamp(16px,3.7vw,35px) clamp(17px,4.5vw,42px)!important;box-shadow:0 16px 38px #061c157d!important}
+.painted-book-frame:before{display:none!important}
+.painted-book-frame .v5-spread{position:relative;z-index:1;border:1px solid #aa855142;border-radius:7px;box-shadow:inset 0 0 0 1px #fff4cf87,0 0 14px #70522a4d}
+.painted-book-frame .v5-left{background:linear-gradient(145deg,#1f493cef,#17372cf2 58%,#0c2723f0),url("assets/painted/book-cover.webp") center/cover no-repeat}
+.painted-book-frame .v5-right{background:linear-gradient(96deg,#eddec3f5,#fff8e9f7 17%,#fff9eefa 89%,#ead4b2f4)}
+.painted-open-book-mini{display:block;height:auto;width:min(255px,64%);max-height:136px;object-fit:contain;margin:10px auto -3px;filter:drop-shadow(0 7px 6px #70502c3b)}
+.painted-book-cover{float:left;width:52px;height:74px;object-fit:contain;margin:-3px 13px 2px -4px;filter:drop-shadow(0 2px 4px #30241460)}
+.v5-step-one:after{content:"";display:block;clear:both}
+.v5-title .section-tag{letter-spacing:.17em}
+.ollie-home-portrait{min-height:110px}
+@media(max-width:1100px){.v5-owl.painted-ollie-wrap{height:157px}.v5-owl.painted-ollie-wrap .ollie-painted{max-width:160px}}
+@media(max-width:650px){.painted-book-frame{padding:10px!important;background-size:100% 100%}.v5-owl.painted-ollie-wrap{height:103px;width:130px}.v5-owl.painted-ollie-wrap .ollie-painted{max-width:110px}.ollie-home-portrait .ollie-painted{height:76px}.painted-open-book-mini{max-height:86px;width:190px;margin:5px auto -3px}.painted-book-cover{height:66px;width:43px;margin-right:9px}}
+@media(prefers-reduced-motion:reduce){.v5-owl .ollie-painted{animation:none!important}}body.reduce-motion .v5-owl .ollie-painted{animation:none!important}
 </style>
 </head>
 <body>
 <div class="page">
  <header class="site-header">
-  <button class="brand" data-action="home" aria-label="Revenir à l’accueil"><span class="brand-icon" aria-hidden="true">🌳</span><span><span class="brand-text">L’Arbre des devoirs</span><small>By Brot2You · English skills · V6 · Enchanted World</small></span></button>
+  <button class="brand" data-action="home" aria-label="Revenir à l’accueil"><span class="brand-icon" aria-hidden="true">🌳</span><span><span class="brand-text">L’Arbre des devoirs</span><small>By Brot2You · English skills · V6.2 · Painted Edition</small></span></button>
   <nav class="header-actions" id="top-nav" aria-label="Navigation principale"></nav>
  </header>
  <main id="app" class="site-main" aria-live="polite"></main>
@@ -558,41 +584,25 @@ function v5Feedback(c,st){
 }
 
 
+
 function v6Ollie(mood='curious',tiny=false){
- const mode=['curious','thinking','caring','encourage','celebrate','proud'].includes(mood)?mood:'curious';
- let pic=owlArt(['proud','celebrate'].includes(mode)?'proud':mode==='thinking'?'thinking':mode==='caring'?'caring':'curious',tiny);
- pic=pic.replace('<circle cx="130" cy="142" r="122" fill="url(#owl-bg)" stroke="#e1b873" stroke-width="3"/>','').replace('<circle cx="130" cy="142" r="116" fill="none" stroke="#f2dcb2" opacity=".5" stroke-dasharray="1 7" stroke-width="2"/>','');
- const art={
- curious:'<circle cx="202" cy="183" r="23" fill="#cbe9e17a" stroke="#dcb875" stroke-width="7"/><path d="M185 199l-19 23" fill="none" stroke="#715137" stroke-width="10" stroke-linecap="round"/>',
- thinking:'<path d="M195 227q-17-44 14-83 32 36-9 82Z" fill="#fff0d1" stroke="#bb9560" stroke-width="3"/><path d="M198 230l13-73" stroke="#bb9560" stroke-width="2"/>',
- caring:'<path d="M196 175q1-20 21-20t21 20M196 180h43l-6 51h-31Z" stroke="#e5c18a" stroke-width="5" fill="#b8844b"/><rect x="206" y="185" width="24" height="35" fill="#ffe1a0"/><path d="M218 192q12 17 0 25-11-8 0-25Z" fill="#ffbe6b"/>',
- encourage:'<path d="M192 200q-4-44 40-52 2 39-35 45Z" fill="#99b975" stroke="#e9d599" stroke-width="3"/><path d="M194 203q17-33 35-48" stroke="#f7e7aa" stroke-width="2" fill="none"/>',
- celebrate:'<path d="M212 219v-52" stroke="#649552" stroke-width="5"/><circle cx="211" cy="153" r="20" fill="#ffd0c3" stroke="#bf7c7b" stroke-width="3"/><path d="M203 153h16M211 145v16" stroke="#ffe8a7" stroke-width="4"/><circle cx="211" cy="153" r="6" fill="#ffe9a5"/>',
- proud:'<path d="M70 210q27-12 58 8 29-19 62-8v43q-34-10-62 8-28-18-58-8Z" fill="#84573b" stroke="#4a3024" stroke-width="4"/><path d="M77 213q23-9 51 8v32q-24-15-51-7ZM128 221q25-17 56-8v33q-28-7-56 7Z" fill="#f6e4bb" stroke="#bc9469" stroke-width="2"/>'
- }[mode];
- return pic.replace('</svg>','<g stroke-linejoin="round">'+art+'</g></svg>');
+ const choices={curious:'curious',thinking:'thinking',caring:'caring',encourage:'encourage',celebrate:'celebrate',proud:'proud'};
+ const chosen=choices[mood]||'curious';
+ const names={curious:'avec une loupe',thinking:'pensif',caring:'avec une lanterne',encourage:'encourageant',celebrate:'heureux',proud:'avec son grimoire'};
+ return '<img class="ollie-painted" src="assets/painted/ollie-'+chosen+'.webp" alt="Ollie le hibou '+names[chosen]+'" loading="lazy" decoding="async">';
 }
+
 function v6Crest(id,size=''){return '<span class="v6-crest '+size+'" aria-hidden="true">'+storybookIcon(id)+'</span>'}
+
 function storybookIcon(type){
- const art={
- co:'<path d="M17 35v-8a15 15 0 0 1 30 0v8" fill="none"/><rect x="12" y="31" width="11" height="19" rx="5"/><rect x="41" y="31" width="11" height="19" rx="5"/>',
- ce:'<path d="M32 50Q23 42 9 44V16q12-3 23 6 11-9 23-6v28Q43 42 32 50Z" fill="#f3ddad"/><path d="M32 22v28M15 25q7-2 12 2M38 27q7-3 11-2" fill="none"/>',
- ee:'<path d="M13 50l6-15 26-25 9 9-27 26Z" fill="#f4dfa9"/><path d="M19 35l8 10M41 15l9 9M13 54h41" fill="none"/>',
- eoc:'<rect x="24" y="9" width="16" height="31" rx="8" fill="#f3dfa8"/><path d="M17 30a15 15 0 0 0 30 0M32 45v11M23 56h18" fill="none"/>',
- eoi:'<path d="M10 12h35v27H28l-13 9V39h-5Z" fill="#f4e5bd"/><path d="M20 23h17M20 30h12" fill="none"/>',
- mediation:'<path d="M15 24a20 20 0 0 1 34-10l6 7M55 21V9M55 21H43M49 40a20 20 0 0 1-34 10l-6-7M9 43v12M9 43h12" fill="none"/>',
- stuck:'<circle cx="32" cy="30" r="20" fill="#f5dfb1"/><path d="M26 23q3-11 13-3 5 6-5 12-3 2-3 6M31 45h2" fill="none"/>',
- lens:'<circle cx="27" cy="25" r="15" fill="#f7e4ae"/><path d="M38 37l15 15M20 22q4-5 12-4" fill="none"/>',
- key:'<circle cx="23" cy="23" r="10" fill="none"/><path d="M30 31l22 22-7 4-5-7-6 1-6-11" fill="#eed5a3"/>',
- flower:'<path d="M32 9l7 15 17 2-13 12 4 18-15-9-16 9 4-18-13-12 18-2Z" fill="#eacb8b"/>'
- };
- return '<svg class="v5-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="#d6ad68" stroke="#6d5434" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">'+(art[type]||art.flower)+'</svg>';
+ const map={co:'listening',ce:'reading',ee:'writing',eoc:'speaking',eoi:'interaction',mediation:'mediation',stuck:'sos',lens:'listening',key:'reading',flower:'sos'};
+ const icon=map[type]||'reading';
+ return '<img class="v5-icon painted-icon" src="assets/painted/icon-'+icon+'.webp" alt="" loading="lazy" decoding="async">';
 }
-function storybookOllie(page){
- const svg=v6Ollie(page===2?'proud':page===1?'thinking':'curious',true);
- const book='<g stroke-linejoin="round"><path d="M72 210q27-10 56 7 30-17 60-7v43q-32-10-60 8-28-18-56-8Z" fill="#83573a" stroke="#422c22" stroke-width="4"/><path d="M78 211q23-9 50 8v36q-26-16-50-9Z" fill="#fff0cc" stroke="#a67c50" stroke-width="2"/><path d="M128 219q24-17 54-8v35q-27-7-54 9Z" fill="#fbe2b5" stroke="#a67c50" stroke-width="2"/><path d="M88 224q13-2 29 7M90 236q14 0 26 7M138 229q18-7 32-5M139 241q16-7 30-4" fill="none" stroke="#aa8b68" stroke-width="2"/></g>';
- return svg.replace('</svg>',book+'</svg>');
-}
+
+
+function storybookOllie(page){return v6Ollie(page===2?'proud':page===1?'thinking':'curious',true)}
+
 function methodViewV5(){
  const c=catById(state.cat);if(!c||!c.stations[state.index])return homeView();
  const s=c.stations[state.index],k=key(c.id,state.index),st=status(c.id,state.index),fav=saved(c.id,state.index);
@@ -617,10 +627,10 @@ function methodViewV5(){
     <div class="v5-feedback"><h3 style="font-size:23px">As-tu essayé cette piste ?</h3>${v5Feedback(c,st)}</div>`
  ];
  const names=['1 · Observer','2 · Essayer','3 · Retenir'];
- return content(`${crumb(c,'Mon grimoire')}<div class="v5-title"><div class="section-tag">✦ THE ENCHANTED TREE · V6 ✦</div><h2>Le Grimoire des stratégies</h2><p>Trois petits chapitres pour apprendre à apprendre</p></div>
- <div class="v5-binding"><div class="v5-spread">
-  <section class="v5-left"><small>✧ BROT2YOU · ENGLISH SKILLS ✧</small><div class="v5-owl" aria-hidden="true">${storybookOllie(p)}</div><small>${esc(c.en)} · ${state.index+1}/${c.stations.length}</small><h3>${esc(s.strategy)}</h3><p class="v5-cover-category">${storybookIcon(c.id)}<span>${esc(c.name)}</span></p>
-   <div class="v5-step-one"><strong>🌱 Ton premier petit pas</strong><p>${esc(s.action)}</p></div>
+ return content(`${crumb(c,'Mon grimoire')}<div class="v5-title"><div class="section-tag">✦ THE ENCHANTED TREE · V6.2 ✦</div><h2>Le Grimoire des stratégies</h2><p>Trois petits chapitres pour apprendre à apprendre</p><img class="painted-open-book-mini" src="assets/painted/book-cover-open.webp" alt="Grimoire enchanté ouvert" loading="lazy"></div>
+ <div class="v5-binding painted-book-frame"><div class="v5-spread">
+  <section class="v5-left"><small>✧ BROT2YOU · ENGLISH SKILLS ✧</small><div class="v5-owl painted-ollie-wrap" aria-hidden="true">${storybookOllie(p)}</div><small>${esc(c.en)} · ${state.index+1}/${c.stations.length}</small><h3>${esc(s.strategy)}</h3><p class="v5-cover-category">${storybookIcon(c.id)}<span>${esc(c.name)}</span></p>
+   <div class="v5-step-one"><img class="painted-book-cover" src="assets/painted/book-cover.webp" alt="" loading="lazy"><strong>🌱 Ton premier petit pas</strong><p>${esc(s.action)}</p></div>
    <button class="star-btn ${fav?'active':''}" data-action="favorite" aria-pressed="${fav}">${fav?'★ Dans mon carnet':'☆ Garder dans mon carnet'}</button>
    <div class="v5-state">${st==='helpful'?'🌸 Stratégie utile':st?'🍃 Stratégie déjà essayée':'📖 Une méthode à explorer'}</div>
   </section>

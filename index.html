@@ -3,11 +3,11 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="application-name" content="L’Arbre des devoirs V6.2">
+ <meta name="application-name" content="L’Arbre des devoirs V6.3">
  <meta name="theme-color" content="#16372f">
- <meta name="app-version" content="6.2-painted-assets">
+ <meta name="app-version" content="6.3-clean-grimoire">
 <meta name="description" content="L'Arbre des devoirs : trouve une stratégie pour progresser en anglais, explore les sept branches et fais grandir ton autonomie.">
- <title>L'Arbre des devoirs · The Enchanted Tree V6.2 · Brot2You</title>
+ <title>L'Arbre des devoirs · The Enchanted Tree V6.3 · Brot2You</title>
  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTUiIGZpbGw9IiMxNjM3MmYiLz48cGF0aCBkPSJNMzEgNTFWMjhtMCAxMi05LThtOSAyIDEwLTEwIiBzdHJva2U9IiNkNmFhNjkiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTMxIDVjLTkgMC0xOSA2LTIwIDE3QzIgMjkgOSA0MSAyMCA0MGM1IDggMTkgOSAyNSAwIDE1IDAgMTgtMTcgOC0yNEM0OSA4IDQwIDQgMzEgNVoiIGZpbGw9IiM2NDk1NjciIHN0cm9rZT0iI2Q4YzU3YSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0ibTMxIDUxLTEyIDZtMTItNiAxMyA2IiBzdHJva2U9IiNkNmFhNjkiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+Cg==" type="image/svg+xml">
  <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700;800&display=swap');
@@ -283,37 +283,58 @@ body.reduce-motion .ollie-portrait,body.reduce-motion .ollie-home-portrait,body.
 @media(max-width:650px){.v5-binding{padding:6px;border:3px solid #ad854d}.v5-spread{grid-template-columns:1fr}.v5-left{border-right:0;border-bottom:6px double #c8a56c;padding:12px 15px}.v5-left h3{font-size:24px}.v5-right{padding:22px 16px;min-height:0}.v5-owl{width:110px;height:90px}.v5-owl .ollie-svg{width:92px;height:90px}.v6-band{padding:12px;gap:10px}.v6-band .v6-crest{width:56px;height:56px;flex-basis:56px}}
 @media(prefers-reduced-motion:reduce){.v5-owl .ollie-svg{animation:none!important}}body.reduce-motion .v5-owl .ollie-svg{animation:none!important}
 
-/* V6.2 - Assets peints, images détourées, sans SVG */
-.ollie-painted{display:block;width:100%;height:100%;object-fit:contain;object-position:center;filter:drop-shadow(0 7px 7px #03170e87);user-select:none;pointer-events:none}
-.ollie-portrait,.ollie-home-portrait,.v5-owl{display:grid;place-items:center}
-.ollie-portrait .ollie-painted{width:95%;height:95%;max-height:260px}
-.ollie-home-portrait .ollie-painted{height:108px;width:100%;object-fit:contain}
-.v5-owl.painted-ollie-wrap{height:190px;max-width:228px;width:100%;margin:8px auto 10px;overflow:visible}
-.v5-owl.painted-ollie-wrap .ollie-painted{position:relative;width:100%;height:96%;max-width:211px;filter:drop-shadow(0 8px 7px #04180bb3);animation:paintedOllieHover 5s ease-in-out infinite}
-@keyframes paintedOllieHover{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+
+/* V6.3 : retour au grimoire propre de la V6, sans fond photographique ni livre superposé */
+/* Ollie et les médaillons restent illustrés avec les PNG/WebP détourés. */
+.ollie-painted{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;user-select:none;pointer-events:none;filter:drop-shadow(0 5px 6px #07190f80)}
+.ollie-portrait,.ollie-home-portrait,.v5-owl{display:grid;place-items:center;min-width:0}
+.ollie-portrait{overflow:visible!important;padding:8px;box-sizing:border-box}
+.ollie-portrait .ollie-painted{width:100%;height:100%;padding:5%;max-height:100%;object-fit:contain}
+.ollie-home{overflow:visible!important}
+.ollie-home-portrait{width:108px;flex:0 0 108px;height:112px;min-height:0;padding:7px;overflow:visible}
+.ollie-home-portrait .ollie-painted{height:100%;width:100%;padding:5px;object-fit:contain}
+.v5-owl.painted-ollie-wrap{width:min(100%,222px);max-width:222px;height:204px;min-height:0;margin:12px auto 14px;padding:12px 18px;overflow:visible!important;box-sizing:border-box}
+.v5-owl.painted-ollie-wrap .ollie-painted{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;animation:paintedOllieHover 5s ease-in-out infinite;filter:drop-shadow(0 6px 6px #051c1199)}
+@keyframes paintedOllieHover{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 .v5-cover-category .painted-icon{width:52px;height:55px;flex:0 0 52px;border:0;background:none;box-shadow:none;object-fit:contain;filter:drop-shadow(0 3px 4px #050f095e)}
 .v6-crest{overflow:visible}
-.v6-crest .painted-icon{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 3px 3px #593e2699)}
+.v6-crest .painted-icon{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 3px #593e2670)}
 .v5-note .icon .painted-icon{width:42px!important;height:42px!important;object-fit:contain;filter:drop-shadow(0 2px 3px #74523265)}
-.painted-book-frame{background: url("assets/painted/book-open.webp") center/100% 100% no-repeat,linear-gradient(130deg,#e7c186,#694628 65%,#d5aa6c);border:0!important;padding:clamp(16px,3.7vw,35px) clamp(17px,4.5vw,42px)!important;box-shadow:0 16px 38px #061c157d!important}
-.painted-book-frame:before{display:none!important}
-.painted-book-frame .v5-spread{position:relative;z-index:1;border:1px solid #aa855142;border-radius:7px;box-shadow:inset 0 0 0 1px #fff4cf87,0 0 14px #70522a4d}
-.painted-book-frame .v5-left{background:linear-gradient(145deg,#1f493cef,#17372cf2 58%,#0c2723f0),url("assets/painted/book-cover.webp") center/cover no-repeat}
-.painted-book-frame .v5-right{background:linear-gradient(96deg,#eddec3f5,#fff8e9f7 17%,#fff9eefa 89%,#ead4b2f4)}
-.painted-open-book-mini{display:block;height:auto;width:min(255px,64%);max-height:136px;object-fit:contain;margin:10px auto -3px;filter:drop-shadow(0 7px 6px #70502c3b)}
-.painted-book-cover{float:left;width:52px;height:74px;object-fit:contain;margin:-3px 13px 2px -4px;filter:drop-shadow(0 2px 4px #30241460)}
-.v5-step-one:after{content:"";display:block;clear:both}
+/* Restaurer l'ancien livre CSS vert forêt / parchemin et sa reliure latérale */
+.v5-binding{border:6px solid #c49a60!important;border-radius:24px!important;padding:11px!important;background:linear-gradient(130deg,#f2d6a1,#936b41 27%,#5b3924 62%,#dcb57a)!important;box-shadow:0 20px 48px #04180e8c,inset 0 0 0 2px #ffe1a1!important}
+.v5-binding:before{content:"";position:absolute;inset:5px;border:1px solid #f4dba38f;border-radius:17px;pointer-events:none}
+.v5-binding:after{display:none!important;content:none!important}
+.v5-spread{position:relative;display:grid;grid-template-columns:minmax(0,40%) minmax(0,60%);border-radius:13px;border:2px solid #6c4a29;overflow:hidden;background:#f8f0dd}
+.v5-left{background:radial-gradient(ellipse at 50% 15%,#647f5f,#2c5440 48%,#0b2b25)!important;border-right:8px double #e5c18a!important;box-shadow:inset -5px 0 10px #061e1559}
+.v5-right{background:radial-gradient(ellipse at 80% 5%,#fffaf1,transparent 60%),linear-gradient(95deg,#e8d3b0,#fff7e5 15%,#fffaec 89%,#ead5b4)!important;padding:27px clamp(22px,3vw,37px) 26px clamp(31px,3.6vw,45px)!important;box-shadow:inset 12px 0 17px -13px #301e1694}
+.v5-right:before{content:"";position:absolute;inset:11px;border:1px solid #c2a2716c;border-radius:5px;pointer-events:none}
 .v5-title .section-tag{letter-spacing:.17em}
-.ollie-home-portrait{min-height:110px}
-@media(max-width:1100px){.v5-owl.painted-ollie-wrap{height:157px}.v5-owl.painted-ollie-wrap .ollie-painted{max-width:160px}}
-@media(max-width:650px){.painted-book-frame{padding:10px!important;background-size:100% 100%}.v5-owl.painted-ollie-wrap{height:103px;width:130px}.v5-owl.painted-ollie-wrap .ollie-painted{max-width:110px}.ollie-home-portrait .ollie-painted{height:76px}.painted-open-book-mini{max-height:86px;width:190px;margin:5px auto -3px}.painted-book-cover{height:66px;width:43px;margin-right:9px}}
-@media(prefers-reduced-motion:reduce){.v5-owl .ollie-painted{animation:none!important}}body.reduce-motion .v5-owl .ollie-painted{animation:none!important}
+.v5-step-one:after{content:"";display:block;clear:both}
+@media(max-width:1100px){
+ .v5-owl.painted-ollie-wrap{width:190px;max-width:100%;height:175px;padding:10px 16px}
+}
+@media(max-width:680px){
+ .ollie-home-portrait{width:78px;height:82px;flex:0 0 78px;padding:4px}
+ .ollie-home-portrait .ollie-painted{padding:4px}
+ .ollie-portrait{padding:5px}
+ .v5-binding{border-width:3px!important;padding:7px!important;border-radius:16px!important}
+ .v5-spread{grid-template-columns:minmax(0,1fr)}
+ .v5-left{border-right:0!important;border-bottom:7px double #c8a56c!important}
+ .v5-right{padding:24px 17px!important;min-height:0}
+ .v5-owl.painted-ollie-wrap{height:116px;width:132px;margin:5px auto 8px;padding:7px 9px}
+}
+@media(max-width:375px){
+ .ollie-home-portrait{width:64px;height:70px;flex-basis:64px}
+ .v5-right{padding:22px 13px!important}
+}
+@media(prefers-reduced-motion:reduce){.v5-owl .ollie-painted{animation:none!important}}
+body.reduce-motion .v5-owl .ollie-painted{animation:none!important}
 </style>
 </head>
 <body>
 <div class="page">
  <header class="site-header">
-  <button class="brand" data-action="home" aria-label="Revenir à l’accueil"><span class="brand-icon" aria-hidden="true">🌳</span><span><span class="brand-text">L’Arbre des devoirs</span><small>By Brot2You · English skills · V6.2 · Painted Edition</small></span></button>
+  <button class="brand" data-action="home" aria-label="Revenir à l’accueil"><span class="brand-icon" aria-hidden="true">🌳</span><span><span class="brand-text">L’Arbre des devoirs</span><small>By Brot2You · English skills · V6.3 · Clean Grimoire</small></span></button>
   <nav class="header-actions" id="top-nav" aria-label="Navigation principale"></nav>
  </header>
  <main id="app" class="site-main" aria-live="polite"></main>
@@ -627,10 +648,10 @@ function methodViewV5(){
     <div class="v5-feedback"><h3 style="font-size:23px">As-tu essayé cette piste ?</h3>${v5Feedback(c,st)}</div>`
  ];
  const names=['1 · Observer','2 · Essayer','3 · Retenir'];
- return content(`${crumb(c,'Mon grimoire')}<div class="v5-title"><div class="section-tag">✦ THE ENCHANTED TREE · V6.2 ✦</div><h2>Le Grimoire des stratégies</h2><p>Trois petits chapitres pour apprendre à apprendre</p><img class="painted-open-book-mini" src="assets/painted/book-cover-open.webp" alt="Grimoire enchanté ouvert" loading="lazy"></div>
- <div class="v5-binding painted-book-frame"><div class="v5-spread">
+ return content(`${crumb(c,'Mon grimoire')}<div class="v5-title"><div class="section-tag">✦ THE ENCHANTED TREE · V6.3 ✦</div><h2>Le Grimoire des stratégies</h2><p>Trois petits chapitres pour apprendre à apprendre</p></div>
+ <div class="v5-binding"><div class="v5-spread">
   <section class="v5-left"><small>✧ BROT2YOU · ENGLISH SKILLS ✧</small><div class="v5-owl painted-ollie-wrap" aria-hidden="true">${storybookOllie(p)}</div><small>${esc(c.en)} · ${state.index+1}/${c.stations.length}</small><h3>${esc(s.strategy)}</h3><p class="v5-cover-category">${storybookIcon(c.id)}<span>${esc(c.name)}</span></p>
-   <div class="v5-step-one"><img class="painted-book-cover" src="assets/painted/book-cover.webp" alt="" loading="lazy"><strong>🌱 Ton premier petit pas</strong><p>${esc(s.action)}</p></div>
+   <div class="v5-step-one"><strong>🌱 Ton premier petit pas</strong><p>${esc(s.action)}</p></div>
    <button class="star-btn ${fav?'active':''}" data-action="favorite" aria-pressed="${fav}">${fav?'★ Dans mon carnet':'☆ Garder dans mon carnet'}</button>
    <div class="v5-state">${st==='helpful'?'🌸 Stratégie utile':st?'🍃 Stratégie déjà essayée':'📖 Une méthode à explorer'}</div>
   </section>

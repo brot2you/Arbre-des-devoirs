@@ -3,11 +3,11 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="application-name" content="L’Arbre des devoirs V5">
+ <meta name="application-name" content="L’Arbre des devoirs V5.1">
  <meta name="theme-color" content="#16372f">
- <meta name="app-version" content="5-grimoire">
+ <meta name="app-version" content="5.1-grimoire-correction">
 <meta name="description" content="L'Arbre des devoirs : trouve une stratégie pour progresser en anglais, explore les sept branches et fais grandir ton autonomie.">
- <title>L'Arbre des devoirs · The Enchanted Tree V5 · Brot2You</title>
+ <title>L'Arbre des devoirs · The Enchanted Tree V5.1 · Brot2You</title>
  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTUiIGZpbGw9IiMxNjM3MmYiLz48cGF0aCBkPSJNMzEgNTFWMjhtMCAxMi05LThtOSAyIDEwLTEwIiBzdHJva2U9IiNkNmFhNjkiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTMxIDVjLTkgMC0xOSA2LTIwIDE3QzIgMjkgOSA0MSAyMCA0MGM1IDggMTkgOSAyNSAwIDE1IDAgMTgtMTcgOC0yNEM0OSA4IDQwIDQgMzEgNVoiIGZpbGw9IiM2NDk1NjciIHN0cm9rZT0iI2Q4YzU3YSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0ibTMxIDUxLTEyIDZtMTItNiAxMyA2IiBzdHJva2U9IiNkNmFhNjkiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+Cg==" type="image/svg+xml">
  <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700;800&display=swap');
@@ -206,12 +206,62 @@ body.reduce-motion .ollie-portrait,body.reduce-motion .ollie-home-portrait,body.
 @media(max-width:1070px){.v5-left{padding:15px 12px}.v5-right{padding:18px 13px}.v5-owl{height:119px}.v5-owl .ollie-svg{height:112px;width:116px}}
 @media(max-width:680px){.v5-binding:after{display:none}.v5-spread{grid-template-columns:1fr}.v5-left{padding:10px 16px}.v5-owl{display:none}.v5-left h3{font-size:23px;margin:5px 0}.v5-step-one{padding:8px 12px;margin:8px 0}.v5-left .star-btn{margin:3px auto}.v5-right{padding:20px 15px;min-height:390px}.v5-nav .btn{padding:10px 11px}}
 @media(prefers-reduced-motion:reduce){.v5-right{animation:none!important}}body.reduce-motion .v5-right{animation:none!important}
+
+/* === V5.1 : Grimoire corrigé et enrichi, style Enchanted Tree === */
+.v5-binding{border:5px solid #bc9253;background:linear-gradient(145deg,#f2d9a1,#94673b 22%,#614026 60%,#c59c64);padding:9px;border-radius:23px;box-shadow:0 16px 40px #031d176e,inset 0 0 0 2px #e9c889;isolation:isolate}
+.v5-binding:after{display:none!important;content:none!important}
+.v5-binding:before{content:"";position:absolute;inset:5px;border:1px solid #f7dea788;border-radius:17px;pointer-events:none}
+.v5-spread{position:relative;display:grid;grid-template-columns:minmax(0,40%) minmax(0,60%);border:2px solid #69472b;border-radius:14px;overflow:hidden;min-height:550px;background:#fcf2dc}
+.v5-left{padding:19px 22px;border-right:7px double #d5ad72;box-shadow:inset -5px 0 8px #0b291e6e;background:radial-gradient(ellipse at 50% 15%,#607e5b,#2a513b 49%,#0b2923 100%)}
+.v5-left:before{inset:10px;border-color:#ebcb89ad}
+.v5-left:after{content:"❧ ✦ ❧";position:absolute;bottom:7px;left:0;right:0;color:#e5c98799;font:19px Georgia,serif;pointer-events:none}
+.v5-right{position:relative;padding:27px clamp(23px,3vw,35px) 26px clamp(30px,3.5vw,44px);background:radial-gradient(ellipse at 80% 6%,#fff9eb,transparent 60%),linear-gradient(97deg,#e6d2a9,#fdf3dd 12%,#fff9eb 81%,#f1dec0);box-shadow:inset 12px 0 17px -13px #3c2b1b9c,inset -9px 0 13px -12px #563c23;overflow-wrap:anywhere;word-break:normal}
+.v5-right:before{content:"";position:absolute;inset:11px;border:1px solid #c5a6707a;border-radius:5px;pointer-events:none}
+.v5-right:after{content:"❦";font:24px Georgia,serif;position:absolute;right:14px;top:9px;color:#c29f62;pointer-events:none}
+.v5-owl{width:min(100%,215px);max-width:215px;height:190px;margin:9px auto 12px;display:grid;place-items:center;position:relative}
+.v5-owl:before{inset:4px 9px;border:4px double #edcd91;border-radius:48% 48% 33% 33%;background:radial-gradient(ellipse,#9aaa8250,#18362940 68%,#122e2450);box-shadow:inset 0 0 22px #ecd2962c,0 5px 16px #00160f88}
+.v5-owl:after{content:"✦";position:absolute;right:-4px;top:4px;color:#ffdea3;font-size:26px;filter:drop-shadow(0 0 5px #e1ca8f)}
+.v5-owl .ollie-svg{height:175px;width:175px;max-width:100%;filter:drop-shadow(0 5px 7px #061711aa)}
+.v5-left small{color:#efdbab;letter-spacing:.1em}
+.v5-left h3{color:#ffedc2;font-size:clamp(24px,2.7vw,32px);text-wrap:balance;line-height:1.06;margin:15px 0 8px}
+.v5-left p{color:#d8e0cb}
+.v5-left .star-btn{min-height:45px;border-radius:11px;border:2px solid #bd965f;background:linear-gradient(#fff7e6,#ecdcb6);box-shadow:0 4px 12px #01140d5c}
+.v5-step-one{background:linear-gradient(130deg,#fff8df,#e9d5aa);padding:14px;border:2px solid #c4a270;box-shadow:0 5px 15px #0004;border-radius:12px}
+.v5-step-one strong{color:#805c31}
+.v5-step-one p{color:#344a35;line-height:1.65;font-size:13px}
+.v5-chapter{display:block!important;font-size:11px!important;color:#976f3e!important;padding:4px 0 6px;border-bottom:1px solid #bfa16a60;margin-bottom:12px}
+.v5-chapter:before{content:"✦";margin-right:10px;color:#bd8d4c}
+.v5-right h3{font-size:clamp(27px,3vw,34px);color:#335a41;text-wrap:balance}
+.v5-right .v5-desc{line-height:1.65;font-size:13px}
+.v5-note{display:flex;align-items:start;gap:14px;border-radius:13px;border:1px solid #c8a672;background:linear-gradient(120deg,#fff9e7,#efe0bf);box-shadow:0 5px 13px #84704822;padding:15px}
+.v5-note strong{font-size:25px;color:#345940}
+.v5-note p{line-height:1.65;color:#554934}
+.v5-note .icon{font-size:0;flex:0 0 48px;width:48px;height:48px;display:grid;place-items:center;border:2px solid #a47e47;border-radius:50%;background:radial-gradient(circle at 30% 25%,#fffdf0,#e4cfa5);box-shadow:inset 0 0 0 2px #fff8de}
+.v5-note .icon svg{width:32px;height:32px}
+.v5-note>strong{display:block}
+.v5-note:has(.icon){display:block}
+.v5-note .icon{float:left;margin-right:12px;margin-bottom:7px}
+.v5-note:after{content:"";display:table;clear:both}
+.v5-cover-category{display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap;color:#f0dfba!important}
+.v5-cover-category .v5-icon{width:43px;height:43px;padding:7px;border:2px solid #dfc18a;border-radius:50%;background:#17362d;box-shadow:0 3px 10px #041e1766}
+.v5-cover-category span{flex:1 1 110px;text-align:left}
+.v5-right .check-box{padding:15px;border:1px solid #c7aa7a;background:#f8ebd0}
+.v5-step{font-size:13px;line-height:1.7;border-radius:11px;padding:12px 10px}
+.v5-step input{width:22px;height:22px}
+.v5-mission{border-radius:12px;box-shadow:inset 0 1px #fff9d4}
+.v5-tab{border:2px solid #bc965e;border-radius:12px;min-height:44px;background:linear-gradient(#fffaf0,#e7d0a6);box-shadow:0 3px 0 #73522c;font-size:12px}
+.v5-tab[aria-current=step]{background:linear-gradient(#547d61,#28553c);color:#fff9e8;border-color:#d6b47b;box-shadow:0 3px 0 #183c2c}
+.v5-title h2{font-size:clamp(32px,4vw,45px)}
+.v5-chapters{gap:9px}
+@media(max-width:1100px){.content-layout:has(.v5-binding){grid-template-columns:1fr}.content-layout:has(.v5-binding) .ollie-companion{position:static}}
+@media(max-width:770px){.v5-spread{grid-template-columns:minmax(0,39%) minmax(0,61%)}.v5-right{padding:21px 22px 22px 29px}.v5-left{padding:16px 12px}.v5-owl{width:175px;height:156px}.v5-owl .ollie-svg{width:144px;height:142px}.v5-left h3{font-size:24px}}
+@media(max-width:650px){.v5-binding{border-width:3px;padding:6px;border-radius:15px}.v5-spread{grid-template-columns:1fr;min-height:0}.v5-left{border-right:0;border-bottom:6px double #cfaa76;padding:11px 16px 18px}.v5-owl{width:105px;height:93px;margin:1px auto}.v5-owl .ollie-svg{width:92px;height:94px}.v5-left h3{font-size:25px;margin:5px 0}.v5-step-one{margin:8px 0;padding:9px 11px}.v5-right{padding:24px 17px;min-height:0}.v5-left .star-btn{margin:4px 0}.v5-cover-category .v5-icon{width:35px;height:35px;padding:5px}.v5-note{padding:12px}.v5-right h3{font-size:30px}}
 </style>
 </head>
 <body>
 <div class="page">
  <header class="site-header">
-  <button class="brand" data-action="home" aria-label="Revenir à l’accueil"><span class="brand-icon" aria-hidden="true">🌳</span><span><span class="brand-text">L’Arbre des devoirs</span><small>By Brot2You · English skills · V5 · Grimoire</small></span></button>
+  <button class="brand" data-action="home" aria-label="Revenir à l’accueil"><span class="brand-icon" aria-hidden="true">🌳</span><span><span class="brand-text">L’Arbre des devoirs</span><small>By Brot2You · English skills · V5.1 · Grimoire</small></span></button>
   <nav class="header-actions" id="top-nav" aria-label="Navigation principale"></nav>
  </header>
  <main id="app" class="site-main" aria-live="polite"></main>
@@ -480,6 +530,27 @@ function v5Feedback(c,st){
  if(st==='tried')return `<div class="try-status"><strong>🍃 Tu as essayé !</strong><p>Cette méthode t'a-t-elle aidé à avancer ?</p><div class="btn-row"><button class="btn" data-action="feedback" data-value="helpful">🌸 Oui, ça m'a aidé</button><button class="btn secondary" data-action="feedback" data-value="needhelp">🦉 Pas encore, une autre piste</button></div></div>`;
  return `<div class="v5-mission"><strong>🌱 Chaque essai compte.</strong><p>Applique une petite action à ton vrai devoir avant d'indiquer que tu l'as essayée.</p></div><div class="btn-row"><button class="btn" data-action="feedback" data-value="tried">✓ J'ai essayé cette stratégie</button></div>`;
 }
+
+function storybookIcon(type){
+ const art={
+ co:'<path d="M17 35v-8a15 15 0 0 1 30 0v8" fill="none"/><rect x="12" y="31" width="11" height="19" rx="5"/><rect x="41" y="31" width="11" height="19" rx="5"/>',
+ ce:'<path d="M32 50Q23 42 9 44V16q12-3 23 6 11-9 23-6v28Q43 42 32 50Z" fill="#f3ddad"/><path d="M32 22v28M15 25q7-2 12 2M38 27q7-3 11-2" fill="none"/>',
+ ee:'<path d="M13 50l6-15 26-25 9 9-27 26Z" fill="#f4dfa9"/><path d="M19 35l8 10M41 15l9 9M13 54h41" fill="none"/>',
+ eoc:'<rect x="24" y="9" width="16" height="31" rx="8" fill="#f3dfa8"/><path d="M17 30a15 15 0 0 0 30 0M32 45v11M23 56h18" fill="none"/>',
+ eoi:'<path d="M10 12h35v27H28l-13 9V39h-5Z" fill="#f4e5bd"/><path d="M20 23h17M20 30h12" fill="none"/>',
+ mediation:'<path d="M15 24a20 20 0 0 1 34-10l6 7M55 21V9M55 21H43M49 40a20 20 0 0 1-34 10l-6-7M9 43v12M9 43h12" fill="none"/>',
+ stuck:'<circle cx="32" cy="30" r="20" fill="#f5dfb1"/><path d="M26 23q3-11 13-3 5 6-5 12-3 2-3 6M31 45h2" fill="none"/>',
+ lens:'<circle cx="27" cy="25" r="15" fill="#f7e4ae"/><path d="M38 37l15 15M20 22q4-5 12-4" fill="none"/>',
+ key:'<circle cx="23" cy="23" r="10" fill="none"/><path d="M30 31l22 22-7 4-5-7-6 1-6-11" fill="#eed5a3"/>',
+ flower:'<path d="M32 9l7 15 17 2-13 12 4 18-15-9-16 9 4-18-13-12 18-2Z" fill="#eacb8b"/>'
+ };
+ return '<svg class="v5-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="#d6ad68" stroke="#6d5434" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">'+(art[type]||art.flower)+'</svg>';
+}
+function storybookOllie(page){
+ const svg=owlArt(page===2?'proud':page===1?'thinking':'curious',true);
+ const book='<g stroke-linejoin="round"><path d="M72 210q27-10 56 7 30-17 60-7v43q-32-10-60 8-28-18-56-8Z" fill="#83573a" stroke="#422c22" stroke-width="4"/><path d="M78 211q23-9 50 8v36q-26-16-50-9Z" fill="#fff0cc" stroke="#a67c50" stroke-width="2"/><path d="M128 219q24-17 54-8v35q-27-7-54 9Z" fill="#fbe2b5" stroke="#a67c50" stroke-width="2"/><path d="M88 224q13-2 29 7M90 236q14 0 26 7M138 229q18-7 32-5M139 241q16-7 30-4" fill="none" stroke="#aa8b68" stroke-width="2"/></g>';
+ return svg.replace('</svg>',book+'</svg>');
+}
 function methodViewV5(){
  const c=catById(state.cat);if(!c||!c.stations[state.index])return homeView();
  const s=c.stations[state.index],k=key(c.id,state.index),st=status(c.id,state.index),fav=saved(c.id,state.index);
@@ -487,26 +558,26 @@ function methodViewV5(){
  const answer=state.check==='yes'?s.action:state.check==='no'?c.help:null;
  const ch=[
    `<span class="v5-chapter">CHAPITRE I · OBSERVER</span><h3>Comprendre mon défi</h3><p class="v5-desc">Chaque difficulté est le début d'une aventure. Commençons par la reconnaître.</p>
-    <div class="v5-note"><span class="icon">🔍</span><strong>Ce qui me pose problème</strong><p>${esc(s.q)}</p></div>
+    <div class="v5-note"><span class="icon">${storybookIcon("lens")}</span><strong>Ce qui me pose problème</strong><p>${esc(s.q)}</p></div>
     <div class="check-box"><div class="section-tag">🧭 OLLIE TE DEMANDE</div><p class="question">${esc(c.check)}</p><div class="check-actions">
     <button class="btn ${state.check==='yes'?'':'secondary'}" data-action="check" data-value="yes" aria-pressed="${state.check==='yes'}">✓ Oui</button>
     <button class="btn ${state.check==='no'?'':'secondary'}" data-action="check" data-value="no" aria-pressed="${state.check==='no'}">? Pas encore</button></div>
     ${answer?`<div class="check-note" role="status">🦉 ${esc(answer)}</div>`:''}</div>
-    <div class="v5-note"><span class="icon">🗝️</span><strong>Le secret de la méthode</strong><p>${esc(s.hint)}</p></div>`,
+    <div class="v5-note"><span class="icon">${storybookIcon("key")}</span><strong>Le secret de la méthode</strong><p>${esc(s.hint)}</p></div>`,
    `<span class="v5-chapter">CHAPITRE II · EXPÉRIMENTER</span><h3>Ma méthode pas à pas</h3><p class="v5-desc">Coche les étapes vraiment réalisées. Reviens-y à ton rythme.</p>
     <p class="v5-small" role="status">🍃 ${done.length} / ${s.tips.length} étapes réalisées</p><div class="v5-meter" role="progressbar" aria-label="Étapes réalisées" aria-valuemin="0" aria-valuemax="${s.tips.length}" aria-valuenow="${done.length}"><span style="width:${done.length/s.tips.length*100}%"></span></div>
     <div class="v5-steps">${s.tips.map((t,i)=>`<label class="v5-step ${done.includes(i)?'done':''}"><input type="checkbox" data-v5-step="${i}" ${done.includes(i)?'checked':''}><span><b>${i+1}.</b> ${esc(t)}</span></label>`).join('')}</div>
     <div class="v5-mission"><strong>✦ Ma mini-mission</strong><p>${esc(V5_MISSIONS[c.id]||s.action)}</p></div>`,
-   `<span class="v5-chapter">CHAPITRE III · RETENIR</span><h3>Je retiens et je progresse</h3><div class="v5-note"><span class="icon">🌸</span><strong>La formule à garder</strong><p>${esc(s.hint)}</p></div>
+   `<span class="v5-chapter">CHAPITRE III · RETENIR</span><h3>Je retiens et je progresse</h3><div class="v5-note"><span class="icon">${storybookIcon("flower")}</span><strong>La formule à garder</strong><p>${esc(s.hint)}</p></div>
     <label for="v5-reflection" style="display:block;font-size:13px;font-weight:800;color:#3a5840">✍️ Mon idée à retenir (facultatif)</label>
     <textarea id="v5-reflection" class="v5-reflect" data-v5-reflection maxlength="300" placeholder="Aujourd'hui, j'ai découvert que…">${esc(note)}</textarea>
     <p class="v5-small">Cette note reste dans ce navigateur, sur cet appareil.</p>
     <div class="v5-feedback"><h3 style="font-size:23px">As-tu essayé cette piste ?</h3>${v5Feedback(c,st)}</div>`
  ];
  const names=['1 · Observer','2 · Essayer','3 · Retenir'];
- return content(`${crumb(c,'Mon grimoire')}<div class="v5-title"><div class="section-tag">✦ THE ENCHANTED TREE · V5 ✦</div><h2>Le Grimoire des stratégies</h2><p>Trois petits chapitres pour apprendre à apprendre</p></div>
+ return content(`${crumb(c,'Mon grimoire')}<div class="v5-title"><div class="section-tag">✦ THE ENCHANTED TREE · V5.1 ✦</div><h2>Le Grimoire des stratégies</h2><p>Trois petits chapitres pour apprendre à apprendre</p></div>
  <div class="v5-binding"><div class="v5-spread">
-  <section class="v5-left"><small>✧ BROT2YOU · ENGLISH SKILLS ✧</small><div class="v5-owl" aria-hidden="true">${owlArt('curious',true)}</div><small>${esc(c.en)} · ${state.index+1}/${c.stations.length}</small><h3>${esc(s.strategy)}</h3><p>${c.icon} ${esc(c.name)}</p>
+  <section class="v5-left"><small>✧ BROT2YOU · ENGLISH SKILLS ✧</small><div class="v5-owl" aria-hidden="true">${storybookOllie(p)}</div><small>${esc(c.en)} · ${state.index+1}/${c.stations.length}</small><h3>${esc(s.strategy)}</h3><p class="v5-cover-category">${storybookIcon(c.id)}<span>${esc(c.name)}</span></p>
    <div class="v5-step-one"><strong>🌱 Ton premier petit pas</strong><p>${esc(s.action)}</p></div>
    <button class="star-btn ${fav?'active':''}" data-action="favorite" aria-pressed="${fav}">${fav?'★ Dans mon carnet':'☆ Garder dans mon carnet'}</button>
    <div class="v5-state">${st==='helpful'?'🌸 Stratégie utile':st?'🍃 Stratégie déjà essayée':'📖 Une méthode à explorer'}</div>
